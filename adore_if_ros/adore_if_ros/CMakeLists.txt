@@ -1108,6 +1108,7 @@ install(
   src/adore_set_pose.py
   src/adore_set_goal.py
   src/adore_suppress_lanechanges.py
+  src/ecu_emergency_stop_node.py
   src/test_vectorsize.py
   src/plotlab2navigationgoal.py
   src/test_usb_keyboard.py

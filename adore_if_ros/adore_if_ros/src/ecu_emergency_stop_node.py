@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 # ********************************************************************************
 # * Copyright (C) 2017-2020 German Aerospace Center (DLR). 
 # * Eclipse ADORe, Automated Driving Open Research https://eclipse.org/adore
