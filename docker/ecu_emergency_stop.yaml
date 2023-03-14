@@ -1,0 +1,19 @@
+version: '3.5'
+
+services: 
+  ecu_emergency_stop_node:
+    image: ecu_emergency_stop:latest
+    container_name: ecu_emergency_stop 
+    hostname: ecu_emergency_stop 
+    network_mode: "host"
+    restart: unless-stopped
+    environment:
+      - ROS_MASTER_URI=http://127.0.0.1:11311
+      - ROS_HOSTNAME=127.0.0.1
+    build:
+      context: .
+      network: host
+      dockerfile: Dockerfile.ecu_emergency_stop 
+    volumes:
+      - ${ADORE_SOURCE_DIRECTORY}:/tmp/adore
+      - /var/log/rsyslog/telemetry.log:/var/log/rsyslog/telemetry.log

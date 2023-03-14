@@ -1,0 +1,24 @@
+
+FROM ros:noetic-ros-core-focal 
+
+ENV ADORE_SOURCE_DIRECTORY=/tmp/adore
+
+USER root
+
+WORKDIR /tmp/requirements
+RUN apt-get update && \
+    apt-get install --no-install-recommends -y \
+                                               python3 \
+                                               python3-rospy \
+                                               python3-rosgraph \
+                                               && \
+    rm -rf /var/lib/apt/lists/*
+
+RUN mkdir -p $ADORE_SOURCE_DIRECTORY
+
+SHELL ["/bin/bash", "-c"]
+
+#ENTRYPOINT ["./tmp/adore/adore_if_ros/adore_if_ros/src/ecu_emergency_stop_node.py"]
+#ENTRYPOINT ["sh", "-c", "ls -la '/tmp/adore/adore_if_ros/adore_if_ros/src'"]
+WORKDIR "$ADORE_SOURCE_DIRECTORY/adore_if_ros/adore_if_ros/src"
+ENTRYPOINT ["bash", "-c", "source /opt/ros/noetic/local_setup.sh && python3 ecu_emergency_stop_node.py"]
