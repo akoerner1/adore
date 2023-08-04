@@ -16,6 +16,7 @@ DOCKER_CONFIG?=${ROOT_DIR}/apt_cacher_ng_docker
 
 
 include adore_cli/adore_cli.mk
+include adore_if_carla/adore_if_carla.mk
 include ${SUBMODULES_PATH}/ci_teststand/ci_teststand.mk
 
 PROJECT:="adore"
