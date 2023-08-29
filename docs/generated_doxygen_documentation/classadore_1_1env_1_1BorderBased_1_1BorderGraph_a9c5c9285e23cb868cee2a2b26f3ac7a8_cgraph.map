@@ -1,0 +1,6 @@
+<map id="adore::env::BorderBased::BorderGraph::getSuccessors" name="adore::env::BorderBased::BorderGraph::getSuccessors">
+<area shape="rect" id="node1" title=" " alt="" coords="5,71,219,112"/>
+<area shape="rect" id="node2" href="$classadore_1_1env_1_1BorderBased_1_1BorderSet.html#a8af807fde181a20de55594592d752adc" title="Get left neighbor of a border." alt="" coords="271,5,478,47"/>
+<area shape="rect" id="node3" href="$classadore_1_1env_1_1BorderBased_1_1BorderSet.html#a49e8f6a0309cd0c2c2afa28412435f4f" title="get the right neighbor of a border" alt="" coords="267,71,483,112"/>
+<area shape="rect" id="node4" href="$classadore_1_1env_1_1BorderBased_1_1BorderSet.html#a4a75adfc507696182edc2514b86f5d24" title="get an interator pair for all borders which follow after b" alt="" coords="277,136,472,177"/>
+</map>

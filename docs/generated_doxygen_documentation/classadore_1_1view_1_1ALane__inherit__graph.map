@@ -1,0 +1,7 @@
+<map id="adore::view::ALane" name="adore::view::ALane">
+<area shape="rect" id="node1" title=" " alt="" coords="353,5,575,229"/>
+<area shape="rect" id="node2" href="$classadore_1_1env_1_1BorderBased_1_1DependentLane.html" title=" " alt="" coords="5,285,227,567"/>
+<area shape="rect" id="node3" href="$classadore_1_1env_1_1BorderBased_1_1LaneFollowingView.html" title="LaneFollowingview provides traffic related information for the current lane." alt="" coords="251,277,445,575"/>
+<area shape="rect" id="node4" href="$classadore_1_1env_1_1BorderBased_1_1LaneFollowingViewProxy.html" title="Proxy class to access ALane interfaces from preprocessed lane geometry received as data object." alt="" coords="469,299,691,553"/>
+<area shape="rect" id="node5" href="$classadore_1_1env_1_1ThreeLaneViewDecoupled_1_1LaneProxy.html" title=" " alt="" coords="715,292,936,560"/>
+</map>

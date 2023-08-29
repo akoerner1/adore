@@ -1,0 +1,19 @@
+<map id="adore::apps::VehicleModel::VehicleModel" name="adore::apps::VehicleModel::VehicleModel">
+<area shape="rect" id="node1" title="Construct a new Vehicle Model object." alt="" coords="5,415,199,456"/>
+<area shape="rect" id="node2" href="$classadore_1_1fun_1_1FunFactoryInstance.html#a3d8e318e1ad87251caef9bad22a99b40" title=" " alt="" coords="249,17,499,43"/>
+<area shape="rect" id="node4" href="$classadore_1_1params_1_1ParamsFactoryInstance.html#ae4d79d6130cebb47d90a82b6edb7660d" title=" " alt="" coords="265,71,483,112"/>
+<area shape="rect" id="node6" href="$classadore_1_1sim_1_1SimFactoryInstance.html#a28016f33b8e8c8f3079aafdae6198a03" title=" " alt="" coords="247,137,501,163"/>
+<area shape="rect" id="node8" href="$classadore_1_1sim_1_1AFactory.html#a4857b6730c530f5203695bdba824155c" title="write updates on the localization estimated vehicle motion state" alt="" coords="253,187,495,243"/>
+<area shape="rect" id="node9" href="$classadore_1_1sim_1_1AFactory.html#a6d2fc6b5279c9aeb06e5d049acf418aa" title="read a motion command" alt="" coords="269,268,479,309"/>
+<area shape="rect" id="node10" href="$classadore_1_1sim_1_1AFactory.html#a31af934568efa8b65ecb13aaec713c1d" title="write updates on the odometry estimated vehicle motion state" alt="" coords="259,334,489,390"/>
+<area shape="rect" id="node11" href="$classadore_1_1sim_1_1AFactory.html#ad6c988e04c8b48da88d64cf75b99a6f8" title="send ego state to simulation feed" alt="" coords="294,415,454,456"/>
+<area shape="rect" id="node12" href="$classadore_1_1sim_1_1AFactory.html#ac9e1883bcd8109e72dd8781ca01f1c72" title="read the simulation time" alt="" coords="274,480,474,521"/>
+<area shape="rect" id="node13" href="$classadore_1_1params_1_1AFactory.html#a8391b48b706bb01a21e7502824875d0b" title=" " alt="" coords="284,545,464,587"/>
+<area shape="rect" id="node14" href="$classadore_1_1sim_1_1AFactory.html#ac61bc6790ecddc899be5bea21acda2eb" title="write updates on the vehicle extended state (buttons, etc.)" alt="" coords="257,611,491,652"/>
+<area shape="rect" id="node15" href="$classadore_1_1sim_1_1AFactory.html#a09ad7e29dbd98abc7a14ff3495df3922" title="write updates on the true vehicle motion state" alt="" coords="265,676,483,717"/>
+<area shape="rect" id="node16" href="$classadore_1_1sim_1_1AFactory.html#aa47e79fa0857e316e60aba7b81a4c802" title="read simulation commands for vehicle position and orientation resetting" alt="" coords="275,741,473,783"/>
+<area shape="rect" id="node17" href="$classadore_1_1sim_1_1AFactory.html#aba2aedeafba8c55fcec896a7f85625d9" title="read simulation commands for vehicle speed resetting" alt="" coords="275,807,473,848"/>
+<area shape="rect" id="node3" href="$classadore_1_1fun_1_1FunFactoryInstance.html#a0826e9a7ea3c70a3780115e6effbf746" title="Function to access singleton instance of the funFactory using magic static." alt="" coords="552,5,773,47"/>
+<area shape="rect" id="node5" href="$classadore_1_1params_1_1ParamsFactoryInstance.html#a59eae0e003d40b03f9db2d814ec2a3bf" title="Function to access singleton instance of the AllFactory using magic static." alt="" coords="553,71,772,112"/>
+<area shape="rect" id="node7" href="$classadore_1_1sim_1_1SimFactoryInstance.html#a177ce78bb1c9675c9dd0370e5f31f749" title="Function to access singleton instance of the AllFactory using magic static." alt="" coords="549,136,776,177"/>
+</map>

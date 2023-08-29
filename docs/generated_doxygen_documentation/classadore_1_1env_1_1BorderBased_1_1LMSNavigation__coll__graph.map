@@ -1,0 +1,11 @@
+<map id="adore::env::BorderBased::LMSNavigation" name="adore::env::BorderBased::LMSNavigation">
+<area shape="rect" id="node1" title=" " alt="" coords="479,1100,666,1207"/>
+<area shape="rect" id="node2" href="$classadore_1_1env_1_1BorderBased_1_1LaneMatchingStrategy.html" title=" " alt="" coords="338,152,519,244"/>
+<area shape="rect" id="node6" href="$classadore_1_1env_1_1BorderBased_1_1LMSContinuation.html" title=" " alt="" coords="479,813,666,1037"/>
+<area shape="rect" id="node9" href="$classadore_1_1env_1_1BorderBased_1_1LMSNearest.html" title=" " alt="" coords="351,549,533,670"/>
+<area shape="rect" id="node3" href="$classadore_1_1env_1_1BorderBased_1_1BorderSet.html" title="efficiently store borders in boost R&#45;tree" alt="" coords="543,5,741,391"/>
+<area shape="rect" id="node4" href="$classadore_1_1env_1_1BorderBased_1_1BorderCostMap.html" title=" " alt="" coords="35,879,267,971"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,549,276,670"/>
+<area shape="rect" id="node7" href="$structadore_1_1env_1_1BorderBased_1_1BorderID.html" title="This struct identifies a Border by the coordinates of the starting and the end point." alt="" coords="850,468,1045,751"/>
+<area shape="rect" id="node8" href="$structadore_1_1env_1_1BorderBased_1_1Coordinate.html" title="This struct represents 3&#45;dimensional coordines." alt="" coords="857,64,1038,332"/>
+</map>

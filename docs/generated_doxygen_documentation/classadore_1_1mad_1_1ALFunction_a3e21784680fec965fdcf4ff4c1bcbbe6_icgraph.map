@@ -1,0 +1,33 @@
+<map id="adore::mad::ALFunction::clone" name="adore::mad::ALFunction::clone">
+<area shape="rect" id="node1" title=" " alt="" coords="1623,561,1797,603"/>
+<area shape="rect" id="node2" href="$classadore_1_1mad_1_1FunctionModification__ReciprocalScalar.html#a3ec6f01094aab65ffb563d8b22eb77d8" title=" " alt="" coords="1325,5,1563,47"/>
+<area shape="rect" id="node3" href="$classadore_1_1mad_1_1FunctionCombination__Multiplication.html#a2e33616295151b13155c36c69fee9392" title=" " alt="" coords="1323,71,1565,112"/>
+<area shape="rect" id="node4" href="$classadore_1_1mad_1_1FunctionCombination__Multiplication__Matrix.html#a69643170c33221cb60e569e20f397cea" title=" " alt="" coords="1323,136,1565,177"/>
+<area shape="rect" id="node5" href="$classadore_1_1mad_1_1FunctionCombination__MultiplicationConst.html#abf5846f5030e69dcb05fbc40c116d446" title=" " alt="" coords="1323,201,1565,243"/>
+<area shape="rect" id="node6" href="$classadore_1_1mad_1_1FunctionCombination__Chain.html#acb368da1ce6c9b034444d282bb795458" title=" " alt="" coords="1323,267,1565,308"/>
+<area shape="rect" id="node7" href="$classadore_1_1mad_1_1FunctionCombination__Stack.html#a14e91dee22407bbce72f8892786c0989" title=" " alt="" coords="1323,332,1565,373"/>
+<area shape="rect" id="node8" href="$classadore_1_1mad_1_1FunctionCombination__StackScalar.html#a004a8278028f8b355afd48cbecfa7751" title=" " alt="" coords="1323,397,1565,439"/>
+<area shape="rect" id="node9" href="$classadore_1_1mad_1_1LHeading.html#a4469f4983f7f31c2e0406a6259c494be" title=" " alt="" coords="1361,463,1527,504"/>
+<area shape="rect" id="node10" href="$classadore_1_1mad_1_1IntegratorChain.html#ade7ba28d61d316f2b790a1f99b82028c" title=" " alt="" coords="1341,528,1547,569"/>
+<area shape="rect" id="node11" href="$classadore_1_1mad_1_1RotationFunction_1_1RotationFunctionPD.html#aa5df0979f47b19d49ab5833b7ba989b1" title=" " alt="" coords="1337,593,1551,635"/>
+<area shape="rect" id="node12" href="$classadore_1_1mad_1_1RotationFunction.html#ac22369bf6e353be747264feac9dee0b4" title=" " alt="" coords="1337,659,1551,700"/>
+<area shape="rect" id="node14" href="$classadore_1_1mad_1_1FunctionModification__ReciprocalScalar.html#aba7f0ad38a2957803251ef0dd2714da2" title=" " alt="" coords="1315,724,1573,765"/>
+<area shape="rect" id="node15" href="$classadore_1_1mad_1_1FunctionCombination__Multiplication.html#a5698b019242cce600bf11676c5aa22f1" title=" " alt="" coords="1323,789,1565,831"/>
+<area shape="rect" id="node16" href="$classadore_1_1mad_1_1FunctionCombination__Multiplication__Matrix.html#a0b7028ace043788e6ffaf32aec2c63b1" title=" " alt="" coords="1323,855,1565,911"/>
+<area shape="rect" id="node17" href="$classadore_1_1mad_1_1FunctionCombination__Chain.html#a8a64a7f03f2b113f7b791030bd13d043" title=" " alt="" coords="1323,936,1565,977"/>
+<area shape="rect" id="node18" href="$classadore_1_1mad_1_1LHeading.html#a8f9a59e6cc92d22a4f71c8eec7d86b7d" title=" " alt="" coords="1361,1001,1527,1043"/>
+<area shape="rect" id="node19" href="$classadore_1_1mad_1_1IntegratorChain.html#ab59c690eb9ad6bba4879acf8e8c4937e" title=" " alt="" coords="1341,1067,1547,1108"/>
+<area shape="rect" id="node20" href="$classadore_1_1if__xodr_1_1XODR2BorderBasedConverter.html#ad44ad78fc703b6119dc78513b650b015" title="combine lanes and center line to function representation of road section" alt="" coords="1313,1132,1575,1173"/>
+<area shape="rect" id="node13" href="$classadore_1_1mad_1_1RotationFunction.html#a5a5a8994c8c51b7d62b1c02fc33a4a61" title=" " alt="" coords="1050,659,1265,700"/>
+<area shape="rect" id="node21" href="$classadore_1_1if__xodr_1_1XODR2BorderBasedConverter.html#a7f2969e95bacb9b0e03d244d4f57ac89" title="convert road geometry to borders and also extract traffic control devices and stop lines" alt="" coords="1049,1132,1265,1173"/>
+<area shape="rect" id="node22" href="$classadore_1_1if__xodr_1_1XODR2BorderBasedConverter.html#a6ca6d0c42c07f37d316e7003676fb297" title="Fills data sets of BorderBased map data representation with data from openDrive xml file." alt="" coords="795,1132,1001,1173"/>
+<area shape="rect" id="node23" href="$classadore_1_1if__xodr_1_1XODR2BorderBasedConverter.html#afb43456b1cc2ee1c30ca4f5a8278f1ba" title="full conversion of OpenDRIVE map to object representations" alt="" coords="540,1132,747,1173"/>
+<area shape="rect" id="node24" href="$classadore_1_1if__xodr_1_1XODR2BorderBasedConverter.html#a97fecbc54c87b560db6f8a79fd44bda3" title="slightly reduced conversion without reference point of map" alt="" coords="263,1001,470,1043"/>
+<area shape="rect" id="node25" href="$classadore_1_1apps_1_1MapProvider.html#ad6e153760ff95bac2290d48594745c22" title=" " alt="" coords="273,1067,461,1108"/>
+<area shape="rect" id="node27" href="$classadore_1_1apps_1_1Navigation.html#a77e0f4a96b663ca6ec5287af1965822f" title=" " alt="" coords="278,1132,455,1173"/>
+<area shape="rect" id="node29" href="$classadore_1_1apps_1_1PlainXMLExporter.html#acd64af468d0194ac614c575d91df877e" title=" " alt="" coords="241,1198,492,1225"/>
+<area shape="rect" id="node31" href="$test__ocroadbasedprediction_8cpp.html#a8a83239243952bcc807580ed96244f28" title=" " alt="" coords="319,1249,414,1275"/>
+<area shape="rect" id="node26" href="$classadore_1_1apps_1_1MapProvider.html#a1d9aa34b5f68408f3d494a1fad7b62be" title=" " alt="" coords="5,1067,193,1108"/>
+<area shape="rect" id="node28" href="$classadore_1_1apps_1_1Navigation.html#a0f19b60c5090f48fdd06be105610c304" title=" " alt="" coords="11,1132,188,1173"/>
+<area shape="rect" id="node30" href="$plainxmlexporter_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="72,1198,127,1225"/>
+</map>

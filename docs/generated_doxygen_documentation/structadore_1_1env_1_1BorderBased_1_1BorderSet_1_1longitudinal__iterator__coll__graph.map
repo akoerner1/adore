@@ -1,0 +1,12 @@
+<map id="adore::env::BorderBased::BorderSet::longitudinal_iterator" name="adore::env::BorderBased::BorderSet::longitudinal_iterator">
+<area shape="rect" id="node1" title="an iterator, which walks along borders, while there is exactly one successor (forward) or predecessor..." alt="" coords="56,1593,237,1773"/>
+<area shape="rect" id="node2" href="$classadore_1_1env_1_1BorderBased_1_1BorderSet.html" title="efficiently store borders in boost R&#45;tree" alt="" coords="5,1145,203,1531"/>
+<area shape="rect" id="node3" href="$structadore_1_1env_1_1BorderBased_1_1Border.html" title="The border struct contains data of the smallest." alt="" coords="512,1219,693,1457"/>
+<area shape="rect" id="node4" href="$classadore_1_1mad_1_1LLinearPiecewiseFunctionM.html" title=" " alt="" coords="348,778,564,1031"/>
+<area shape="rect" id="node7" href="$classadore_1_1mad_1_1LLinearPiecewiseFunctionM_1_1OneDimension.html" title=" " alt="" coords="227,1233,474,1443"/>
+<area shape="rect" id="node5" href="$classadore_1_1mad_1_1AScalarToN.html" title=" " alt="" coords="367,425,545,635"/>
+<area shape="rect" id="node6" href="$classadore_1_1mad_1_1ALFunction.html" title=" " alt="" coords="352,5,560,347"/>
+<area shape="rect" id="node8" href="$classadore_1_1mad_1_1ALFunction.html" title=" " alt="" coords="116,741,324,1068"/>
+<area shape="rect" id="node9" href="$structadore_1_1env_1_1BorderBased_1_1BorderID.html" title="This struct identifies a Border by the coordinates of the starting and the end point." alt="" coords="601,763,796,1046"/>
+<area shape="rect" id="node10" href="$structadore_1_1env_1_1BorderBased_1_1Coordinate.html" title="This struct represents 3&#45;dimensional coordines." alt="" coords="608,396,789,664"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="adore::view::TrafficObject::getCurrentProgress" name="adore::view::TrafficObject::getCurrentProgress">
+<area shape="rect" id="node1" title=" " alt="" coords="777,39,964,80"/>
+<area shape="rect" id="node2" href="$classadore_1_1env_1_1CooperativeUsersProcess.html#af74e2a73be867c07a8c052352d8006a1" title=" " alt="" coords="515,5,729,47"/>
+<area shape="rect" id="node4" href="$classadore_1_1env_1_1LaneChangeGaps.html#add65c54915bf8c76c346fef8e68f14bc" title=" " alt="" coords="517,71,727,112"/>
+<area shape="rect" id="node3" href="$classadore_1_1env_1_1CooperativeUsersProcess.html#a90a6ba6bf860d193d19c3cda7197d33e" title=" " alt="" coords="252,5,467,47"/>
+<area shape="rect" id="node5" href="$classadore_1_1apps_1_1GapProvider.html#a9473de599ded969161b0e8dc87b60a65" title=" " alt="" coords="266,71,453,112"/>
+<area shape="rect" id="node6" href="$classadore_1_1if__ROS_1_1GapProviderNode.html#a0401f80cea2b23b6e9dcd5a272116bae" title=" " alt="" coords="5,71,204,112"/>
+</map>

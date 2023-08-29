@@ -1,0 +1,7 @@
+<map id="adore::apps::SpeedLimitProvider::SpeedLimitProvider" name="adore::apps::SpeedLimitProvider::SpeedLimitProvider">
+<area shape="rect" id="node1" title=" " alt="" coords="5,64,239,105"/>
+<area shape="rect" id="node2" href="$classadore_1_1env_1_1EnvFactoryInstance.html#a069fadea20089ddf252a244864f305c1" title=" " alt="" coords="287,13,540,39"/>
+<area shape="rect" id="node4" href="$classadore_1_1env_1_1AFactory.html#a72b722a38eb74c1389380c2eb945812f" title=" " alt="" coords="331,64,495,105"/>
+<area shape="rect" id="node5" href="$classadore_1_1env_1_1AFactory.html#a81f661c576816461f1914436620ac208" title=" " alt="" coords="302,129,525,171"/>
+<area shape="rect" id="node3" href="$classadore_1_1env_1_1EnvFactoryInstance.html#a14835a4420fb827ba3809b94a96a7660" title="Function to access singleton instance of the envFactory using magic static." alt="" coords="588,5,812,47"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="adore::fun::StdGapConstraintAndReference" name="adore::fun::StdGapConstraintAndReference">
+<area shape="rect" id="node1" title=" " alt="" coords="616,307,868,648"/>
+<area shape="rect" id="node2" href="$classadore_1_1fun_1_1ANominalPlannerInformation.html" title=" " alt="" coords="5,57,215,193"/>
+<area shape="rect" id="node3" href="$classadore_1_1params_1_1APTrajectoryGeneration.html" title="abstract class containing parameters to configure the behaviour of trajectory generation" alt="" coords="239,49,483,200"/>
+<area shape="rect" id="node4" href="$classadore_1_1view_1_1ALaneChangeView.html" title=" " alt="" coords="507,20,742,229"/>
+<area shape="rect" id="node5" href="$classadore_1_1params_1_1APVehicle.html" title="abstract class for vehicle configuration related paremeters" alt="" coords="767,13,955,237"/>
+<area shape="rect" id="node6" href="$classadore_1_1view_1_1ALane.html" title=" " alt="" coords="979,13,1201,237"/>
+<area shape="rect" id="node7" href="$classadore_1_1params_1_1APTacticalPlanner.html" title="abstract classs containing parameters to configure aspects and constraints of the tactical planner" alt="" coords="1225,5,1475,244"/>
+</map>

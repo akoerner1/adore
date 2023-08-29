@@ -1,0 +1,10 @@
+<map id="adore::env::BorderBased::ConflictZone::calcDistances" name="adore::env::BorderBased::ConflictZone::calcDistances">
+<area shape="rect" id="node1" title=" " alt="" coords="5,78,216,119"/>
+<area shape="rect" id="node2" href="$classadore_1_1env_1_1BorderBased_1_1BorderSet.html#a6e5f07631d25c616de2e5b73781d78dd" title="Get distances of all paths that are possible with a given subset of allowed borders between two borde..." alt="" coords="264,5,508,61"/>
+<area shape="rect" id="node5" href="$namespaceadore_1_1mad.html#adea062854ef0b105a3fdca8cf2aca945" title=" " alt="" coords="319,85,453,112"/>
+<area shape="rect" id="node7" href="$namespaceadore_1_1mad.html#ab58ecb752f9bbfe27832e0a2c0e22c2b" title=" " alt="" coords="321,136,451,163"/>
+<area shape="rect" id="node3" href="$classadore_1_1env_1_1BorderBased_1_1BorderSet.html#abab006662472f1539c78fe4c53a82af7" title="check whether potentialSuccessor is a successor of b" alt="" coords="556,13,737,54"/>
+<area shape="rect" id="node4" href="$classadore_1_1env_1_1BorderBased_1_1BorderSet.html#a8af807fde181a20de55594592d752adc" title="Get left neighbor of a border." alt="" coords="785,13,992,54"/>
+<area shape="rect" id="node6" href="$namespaceadore_1_1mad.html#a618a8842fed7b9375957b1e393c58492" title=" " alt="" coords="580,85,713,112"/>
+<area shape="rect" id="node8" href="$namespaceadore_1_1mad.html#ac61b79c007d1859f93a10c04272095a1" title=" " alt="" coords="582,136,711,163"/>
+</map>

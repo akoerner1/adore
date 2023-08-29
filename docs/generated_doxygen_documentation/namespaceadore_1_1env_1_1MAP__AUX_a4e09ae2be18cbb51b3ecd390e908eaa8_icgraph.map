@@ -1,0 +1,12 @@
+<map id="adore::env::MAP_AUX::getCornerPoints" name="adore::env::MAP_AUX::getCornerPoints">
+<area shape="rect" id="node1" title="Get corner points vector from center point and radius." alt="" coords="1341,100,1504,141"/>
+<area shape="rect" id="node2" href="$classadore_1_1env_1_1MapBorderManagement.html#ad32f8ceaf27f6d7ebff2868d1f99e307" title=" " alt="" coords="1033,35,1287,76"/>
+<area shape="rect" id="node9" href="$classadore_1_1env_1_1MapParkingSpotManagement.html#a32efcf29e243dd5864cd9bb031e60129" title="get new and outdated parking spots based on vehicle position" alt="" coords="1059,100,1261,141"/>
+<area shape="rect" id="node10" href="$classadore_1_1env_1_1MapTCDManagement.html#a03f4aa38338327aa349ba4d27648046b" title="get new/outdated traffic control devices / traffic lights based on last object state and current vehi..." alt="" coords="1027,166,1293,193"/>
+<area shape="rect" id="node3" href="$classadore_1_1env_1_1MapBorderManagement.html#af7001220d32d8fc206ba891ba73f117b" title=" " alt="" coords="695,42,979,69"/>
+<area shape="rect" id="node4" href="$classadore_1_1apps_1_1MapProvider.html#acf95a64b3622a78f235223fe70bd15ff" title="update function" alt="" coords="396,15,613,42"/>
+<area shape="rect" id="node7" href="$classadore_1_1env_1_1NavigationManagement.html#ac2345454e2a9d43b55106a60495f3c71" title=" " alt="" coords="363,67,647,94"/>
+<area shape="rect" id="node5" href="$classadore_1_1if__ROS_1_1MapProviderNode.html#a2dd3f906b4d4fe4ac67e415a6812d525" title=" " alt="" coords="111,5,311,47"/>
+<area shape="rect" id="node6" href="$adore__mapprovider__node_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,13,60,39"/>
+<area shape="rect" id="node8" href="$classadore_1_1apps_1_1Navigation.html#a4be14a35fd450f46452afc37e44d15a6" title=" " alt="" coords="108,71,315,98"/>
+</map>

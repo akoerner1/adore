@@ -1,0 +1,5 @@
+<map id="adore::env::OCRoadBasedPrediction::SearchState" name="adore::env::OCRoadBasedPrediction::SearchState">
+<area shape="rect" id="node1" title=" " alt="" coords="5,696,260,876"/>
+<area shape="rect" id="node2" href="$structadore_1_1env_1_1BorderBased_1_1BorderID.html" title="This struct identifies a Border by the coordinates of the starting and the end point." alt="" coords="35,351,230,633"/>
+<area shape="rect" id="node3" href="$structadore_1_1env_1_1BorderBased_1_1Coordinate.html" title="This struct represents 3&#45;dimensional coordines." alt="" coords="42,5,223,273"/>
+</map>

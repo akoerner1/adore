@@ -1,0 +1,52 @@
+<map id="adore::apps::TrajectoryPlannerLM::computeTrajectory" name="adore::apps::TrajectoryPlannerLM::computeTrajectory">
+<area shape="rect" id="node1" title="update data, views and recompute maneuver" alt="" coords="5,1595,224,1637"/>
+<area shape="rect" id="node2" href="$classadore_1_1fun_1_1MRMPlanner.html#aae8436fc85e3888af12e9e35559e3455" title=" " alt="" coords="305,389,484,430"/>
+<area shape="rect" id="node9" href="$classadore_1_1fun_1_1MRMPlanner.html#af571c3b64d1ca371e14b7721a191b9e3" title=" " alt="" coords="599,451,778,493"/>
+<area shape="rect" id="node17" href="$classadore_1_1fun_1_1DecoupledLFLCPlanner.html#affba6eeb1071f33bc2abe2b7819f88ab" title=" " alt="" coords="272,647,517,689"/>
+<area shape="rect" id="node20" href="$classadore_1_1fun_1_1SetPointRequest.html#ad360777bade7394ad87e58afd6d1a172" title=" " alt="" coords="293,713,496,754"/>
+<area shape="rect" id="node21" href="$classadore_1_1fun_1_1SetPointRequest.html#a035cea93534e45854de1a97f8858ec73" title="remove SetPoints after first stop Method looks for first downward zero crossing of vx and removes all..." alt="" coords="293,778,496,819"/>
+<area shape="rect" id="node22" href="$classadore_1_1fun_1_1SPRAverageProgressLoss.html#ac2f8ed456cbbd9120776d26bbcd3aff2" title=" " alt="" coords="279,843,510,885"/>
+<area shape="rect" id="node23" href="$classadore_1_1fun_1_1SPRNavigationCostOnLane.html#a4e26e29651a63b52b2d5517ca6a4a75b" title=" " alt="" coords="299,909,491,950"/>
+<area shape="rect" id="node24" href="$classadore_1_1fun_1_1SPRNormalizedNavigationCost.html#a5e9ff8251497b3abcb889b255f6a0448" title=" " alt="" coords="297,974,493,1015"/>
+<area shape="rect" id="node25" href="$classadore_1_1fun_1_1SPRLongitudinalAcceleration2Cost.html#afef1d720befec0d87c5ca377409c1103" title=" " alt="" coords="294,1039,495,1081"/>
+<area shape="rect" id="node26" href="$classadore_1_1fun_1_1SPRLongitudinalJerk2Cost.html#aa891744c394519a47f69f742b781cba3" title=" " alt="" coords="294,1105,495,1146"/>
+<area shape="rect" id="node27" href="$classadore_1_1env_1_1ThreeLaneViewDecoupled.html#a8e5ffdb30040c60a96ed70249b8d27fd" title=" " alt="" coords="295,1170,494,1211"/>
+<area shape="rect" id="node28" href="$classadore_1_1env_1_1ThreeLaneViewDecoupled.html#a2201ffb12838d0b3ae309569c99796da" title=" " alt="" coords="283,1235,507,1277"/>
+<area shape="rect" id="node29" href="$classadore_1_1fun_1_1SPRAverageProgressLoss.html#af68e76374bc80eaa9a64971df4d58d17" title=" " alt="" coords="279,1301,510,1342"/>
+<area shape="rect" id="node30" href="$classadore_1_1fun_1_1SPRNavigationCostOnLane.html#a32b1005e93270be90194e3ff69ee2524" title=" " alt="" coords="299,1366,491,1407"/>
+<area shape="rect" id="node31" href="$classadore_1_1fun_1_1SPRNormalizedNavigationCost.html#ae08ca411eccd18294a502964f96abef6" title=" " alt="" coords="297,1431,493,1473"/>
+<area shape="rect" id="node32" href="$classadore_1_1fun_1_1SPRLongitudinalAcceleration2Cost.html#a46efcb41c1333f14dba5a9154f4b5e02" title=" " alt="" coords="291,1497,499,1538"/>
+<area shape="rect" id="node33" href="$classadore_1_1fun_1_1SPRLongitudinalJerk2Cost.html#ae7c314a614dc444e99766a971045820d" title=" " alt="" coords="294,1562,495,1603"/>
+<area shape="rect" id="node34" href="$classadore_1_1env_1_1ThreeLaneViewDecoupled.html#a5ac6272f9e9b6ff01e635315bbb9702b" title=" " alt="" coords="277,1627,512,1669"/>
+<area shape="rect" id="node35" href="$classadore_1_1fun_1_1MRMPlanner.html#a191e6f9207659a89cd1c8051c84445af" title=" " alt="" coords="305,1693,484,1734"/>
+<area shape="rect" id="node36" href="$classadore_1_1fun_1_1DecoupledLFLCPlanner.html#a39505b2842b3e8cd323a28557b43528b" title=" " alt="" coords="272,1758,517,1799"/>
+<area shape="rect" id="node37" href="$classadore_1_1view_1_1ALaneChangeView.html#af9a6da34e4964f7737c839eb980f0f69" title=" " alt="" coords="297,1823,492,1865"/>
+<area shape="rect" id="node38" href="$classadore_1_1fun_1_1DecoupledLFLCPlanner.html#a5ee74bf566bb2ffacf7b1fa3d7fc3d34" title=" " alt="" coords="272,1889,517,1930"/>
+<area shape="rect" id="node39" href="$classadore_1_1params_1_1APTacticalPlanner.html#a88fe7a6c26f217774db81db6f89b48bd" title=" " alt="" coords="283,1955,507,2011"/>
+<area shape="rect" id="node40" href="$classadore_1_1fun_1_1DecoupledLFLCPlanner.html#a76856491dc8b2ed65f04d3a8e93eb09e" title=" " alt="" coords="272,2035,517,2077"/>
+<area shape="rect" id="node41" href="$classadore_1_1fun_1_1SetPointRequest.html#a2f29948657a95f7a97fee3dfc105c404" title=" " alt="" coords="293,2101,496,2142"/>
+<area shape="rect" id="node42" href="$classadore_1_1fun_1_1SPRInvariantCollisionFreedom.html#af502cdc82e44335176f0db4a212aad3e" title=" " alt="" coords="301,2166,488,2207"/>
+<area shape="rect" id="node43" href="$classadore_1_1fun_1_1RestartEffort.html#ab25c4d6a1301f53d4674d51981d28fec" title=" " alt="" coords="305,2231,484,2273"/>
+<area shape="rect" id="node44" href="$classadore_1_1fun_1_1SetPointRequest.html#ac11cee7cf816a8324d6b151ad222479c" title=" " alt="" coords="293,2297,496,2338"/>
+<area shape="rect" id="node45" href="$classadore_1_1fun_1_1SetPoint.html#afcf858eef5a7946d40cd71291aa233e2" title=" " alt="" coords="319,2362,470,2403"/>
+<area shape="rect" id="node46" href="$classadore_1_1env_1_1NavigationGoalObserver.html#a42361dd7726eacf84ff37bfe7473adb7" title=" " alt="" coords="295,2427,494,2469"/>
+<area shape="rect" id="node47" href="$classadore_1_1env_1_1ConnectionsOnLane.html#a7bec67206032bda80db416b7c38bceb0" title=" " alt="" coords="297,2493,493,2534"/>
+<area shape="rect" id="node48" href="$classadore_1_1env_1_1ControlledConnectionSet4Ego.html#a46832f327d02da800be0e67920d43c92" title=" " alt="" coords="275,2558,514,2599"/>
+<area shape="rect" id="node49" href="$classadore_1_1env_1_1ThreeLaneViewDecoupled.html#aca3859ca38e32c3c87dc92e55f1ad07a" title=" " alt="" coords="295,2623,494,2665"/>
+<area shape="rect" id="node50" href="$classadore_1_1env_1_1DecoupledTrafficPredictionView.html#af51b9518772403dd3407fd2ce3a510db" title=" " alt="" coords="291,2689,498,2730"/>
+<area shape="rect" id="node3" href="$classadore_1_1fun_1_1MRMPlanner.html#a2d13d368c1da79f554f49f930d9946ad" title=" " alt="" coords="599,386,778,427"/>
+<area shape="rect" id="node4" href="$namespaceadore_1_1mad.html#a927f4883d4edcec4dcfd9bb1f09d4f62" title=" " alt="" coords="617,5,761,32"/>
+<area shape="rect" id="node5" href="$classadore_1_1fun_1_1MRMPlanner.html#a57582ff53b0d642a330a9724f10f016e" title="general parameters" alt="" coords="587,57,790,98"/>
+<area shape="rect" id="node6" href="$classadore_1_1mad_1_1LLinearPiecewiseFunctionM.html#aa94d90c8643e2d6792f8594f3d666503" title=" " alt="" coords="860,182,1076,223"/>
+<area shape="rect" id="node7" href="$classadore_1_1fun_1_1InformationSetPostProcessing.html#a3357cc03eb3f30fb54a72738070c3e56" title=" " alt="" coords="565,174,812,215"/>
+<area shape="rect" id="node8" href="$structadore_1_1env_1_1VehicleMotionState9d.html#ae7d75a3f7d52a946f075e669832caa17" title="Get the time." alt="" coords="593,647,784,689"/>
+<area shape="rect" id="node10" href="$classadore_1_1fun_1_1InformationSetPostProcessing.html#abdf5c652e5769e5cb8d36f56c5942328" title=" " alt="" coords="579,240,798,296"/>
+<area shape="rect" id="node12" href="$classadore_1_1fun_1_1RoadCoordinateConverter.html#adcfa7a5683e7ce1ce1c495226f9d56d6" title=" " alt="" coords="589,713,789,754"/>
+<area shape="rect" id="node13" href="$classadore_1_1fun_1_1MRMPlanner.html#aa7d62295f89f29019898e1eee2ca1e09" title=" " alt="" coords="599,321,778,362"/>
+<area shape="rect" id="node14" href="$namespaceadore_1_1mad.html#adea062854ef0b105a3fdca8cf2aca945" title=" " alt="" coords="622,961,755,988"/>
+<area shape="rect" id="node15" href="$classadore_1_1fun_1_1RoadCoordinateConverter.html#ab47571780305ab646a4d27598e9e3dc4" title=" " alt="" coords="579,517,798,558"/>
+<area shape="rect" id="node16" href="$classadore_1_1fun_1_1NominalPlannerInformationSet.html#a8f4a317aa2e1c72060d6191988949277" title=" " alt="" coords="589,582,789,623"/>
+<area shape="rect" id="node11" href="$classadore_1_1mad_1_1LLinearPiecewiseFunctionM.html#a0ec611759526365bf49ca6f8781f0262" title=" " alt="" coords="860,477,1076,518"/>
+<area shape="rect" id="node18" href="$classadore_1_1fun_1_1SetPointRequest.html#aab7094a0ef474f4d84321f454e4adcac" title=" " alt="" coords="587,830,790,871"/>
+<area shape="rect" id="node19" href="$classadore_1_1mad_1_1LQ__OC__single__shooting.html#a7bebc7143eb918b018d5b46c01ce5fef" title=" " alt="" coords="592,895,785,937"/>
+</map>

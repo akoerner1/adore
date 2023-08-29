@@ -1,0 +1,13 @@
+<map id="adore::fun::LateralPlanner&lt; K, P &gt;" name="adore::fun::LateralPlanner&lt; K, P &gt;">
+<area shape="rect" id="node1" title=" " alt="" coords="629,925,865,1369"/>
+<area shape="rect" id="node2" href="$classadore_1_1params_1_1APTrajectoryGeneration.html" title="abstract class containing parameters to configure the behaviour of trajectory generation" alt="" coords="5,631,249,782"/>
+<area shape="rect" id="node3" href="$classadore_1_1params_1_1APVehicle.html" title="abstract class for vehicle configuration related paremeters" alt="" coords="273,595,461,819"/>
+<area shape="rect" id="node4" href="$classadore_1_1fun_1_1RoadCoordinateConverter.html" title=" " alt="" coords="485,551,700,863"/>
+<area shape="rect" id="node5" href="$classadore_1_1fun_1_1VLB__OpenLoop.html" title=" " alt="" coords="344,176,537,488"/>
+<area shape="rect" id="node6" href="$classadore_1_1mad_1_1AOdeModel.html" title=" " alt="" coords="351,5,530,127"/>
+<area shape="rect" id="node7" href="$classadore_1_1view_1_1ALane.html" title=" " alt="" coords="562,220,783,444"/>
+<area shape="rect" id="node8" href="$classadore_1_1fun_1_1SetPointRequest.html" title=" " alt="" coords="725,587,927,826"/>
+<area shape="rect" id="node9" href="$classadore_1_1params_1_1APLateralPlanner.html" title="abstract class containing parameters related to configuring the lateral planner" alt="" coords="951,587,1138,826"/>
+<area shape="rect" id="node10" href="$classadore_1_1fun_1_1NominalPlannerInformationSet.html" title=" " alt="" coords="1163,558,1380,855"/>
+<area shape="rect" id="node11" href="$classadore_1_1fun_1_1ANominalPlannerInformation.html" title=" " alt="" coords="1167,264,1376,400"/>
+</map>

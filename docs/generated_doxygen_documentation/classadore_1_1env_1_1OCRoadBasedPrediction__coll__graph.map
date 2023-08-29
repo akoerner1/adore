@@ -1,0 +1,7 @@
+<map id="adore::env::OCRoadBasedPrediction" name="adore::env::OCRoadBasedPrediction">
+<area shape="rect" id="node1" title=" " alt="" coords="5,769,260,1199"/>
+<area shape="rect" id="node2" href="$classadore_1_1env_1_1OCPredictionStrategy.html" title=" " alt="" coords="21,534,244,626"/>
+<area shape="rect" id="node3" href="$classadore_1_1env_1_1traffic_1_1TrafficMap.html" title=" " alt="" coords="269,453,487,707"/>
+<area shape="rect" id="node4" href="$classadore_1_1mad_1_1AReader.html" title=" " alt="" coords="169,137,366,259"/>
+<area shape="rect" id="node5" href="$classadore_1_1env_1_1BorderBased_1_1BorderSet.html" title="efficiently store borders in boost R&#45;tree" alt="" coords="390,5,587,391"/>
+</map>

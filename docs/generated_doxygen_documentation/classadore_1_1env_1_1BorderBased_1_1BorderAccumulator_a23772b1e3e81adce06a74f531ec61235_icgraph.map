@@ -1,0 +1,17 @@
+<map id="adore::env::BorderBased::BorderAccumulator::append" name="adore::env::BorderBased::BorderAccumulator::append">
+<area shape="rect" id="node1" title="‍**" alt="" coords="1307,79,1517,120"/>
+<area shape="rect" id="node2" href="$classadore_1_1env_1_1BorderBased_1_1BorderAccumulator.html#ab1c6d928e1a180e3c7c2af3ce70599cb" title="Construct a new Border Accumulator object and initialize it with a BorderAccumulationStrategy." alt="" coords="971,5,1259,47"/>
+<area shape="rect" id="node3" href="$classadore_1_1env_1_1BorderBased_1_1LaneFollowingGeometry.html#a12d1bfee80e8e90c72f4317b5650ea09" title="update the road geometry" alt="" coords="1021,151,1209,207"/>
+<area shape="rect" id="node14" href="$classadore_1_1env_1_1BorderBased_1_1LaneChangeGeometry.html#ada2e1c0aa77292509de1dbdda55c5dc9" title="update the road geometry" alt="" coords="1023,71,1206,127"/>
+<area shape="rect" id="node4" href="$classadore_1_1apps_1_1LaneViewProvider.html#a10c08893d16421f195ad2a597bfea8f8" title="update data, views and recompute maneuver" alt="" coords="671,239,923,266"/>
+<area shape="rect" id="node6" href="$classadore_1_1env_1_1BorderBased_1_1LaneFollowingView.html#a7cf867a70cca073393e6ff7320e00244" title="update the LaneFollowingView" alt="" coords="693,152,900,193"/>
+<area shape="rect" id="node5" href="$classadore_1_1if__ROS_1_1LVProviderNode.html#ad35fdbfdaef8f2f89279dc08758bef3a" title=" " alt="" coords="408,261,595,303"/>
+<area shape="rect" id="node7" href="$classadore_1_1apps_1_1TestLCTrajectoryPlanner.html#ac2912d7058c947a47405a0ce64e5609f" title=" " alt="" coords="395,79,607,120"/>
+<area shape="rect" id="node10" href="$classadore_1_1apps_1_1TestMRMPlanner.html#aa437a755996db26933e8c1b63576fff7" title="update function of the trajectory planner" alt="" coords="380,210,623,237"/>
+<area shape="rect" id="node12" href="$classadore_1_1apps_1_1TestTrajectoryPlanner.html#a49e0ba2cac6b0f9253e607ffdf7c7798" title="update function of the trajectory planner" alt="" coords="403,144,599,185"/>
+<area shape="rect" id="node8" href="$classadore_1_1if__ROS_1_1TestLCTrajectoryPlannerNode.html#aadf9b829e6afee6af3219321b72d4d3c" title=" " alt="" coords="108,79,332,120"/>
+<area shape="rect" id="node9" href="$test__lc__trajectory__planner__node_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,86,60,113"/>
+<area shape="rect" id="node11" href="$test__mrm__planner__node_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="193,210,247,237"/>
+<area shape="rect" id="node13" href="$test__trajectory__planner__node_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="193,151,247,178"/>
+<area shape="rect" id="node15" href="$classadore_1_1env_1_1BorderBased_1_1LaneChangeView.html#a83432efdfec3bb90153ec1c4ce9bcee9" title="Update the LaneChangeView." alt="" coords="699,79,894,120"/>
+</map>

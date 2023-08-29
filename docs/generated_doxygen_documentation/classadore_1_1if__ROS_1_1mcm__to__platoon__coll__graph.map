@@ -1,0 +1,8 @@
+<map id="adore::if_ROS::mcm_to_platoon" name="adore::if_ROS::mcm_to_platoon">
+<area shape="rect" id="node1" title=" " alt="" coords="333,439,543,707"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,152,84,229"/>
+<area shape="rect" id="node3" href="$structadore_1_1env_1_1VehicleMotionState9d.html" title="This struct holds the motion state of the vehicle in 9d." alt="" coords="108,64,299,317"/>
+<area shape="rect" id="node4" href="$structadore_1_1env_1_1CooperativeUserPrediction.html" title=" " alt="" coords="323,5,553,376"/>
+<area shape="rect" id="node5" href="$classadore_1_1mad_1_1AWriter.html" title=" " alt="" coords="577,115,800,266"/>
+<area shape="rect" id="node6" href="$classadore_1_1mad_1_1AReader.html" title=" " alt="" coords="825,115,1030,266"/>
+</map>

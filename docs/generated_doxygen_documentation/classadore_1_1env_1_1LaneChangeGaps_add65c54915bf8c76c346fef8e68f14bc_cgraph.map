@@ -1,0 +1,29 @@
+<map id="adore::env::LaneChangeGaps::computeGaps" name="adore::env::LaneChangeGaps::computeGaps">
+<area shape="rect" id="node1" title=" " alt="" coords="5,696,216,737"/>
+<area shape="rect" id="node2" href="$namespaceadore_1_1mad.html#a927f4883d4edcec4dcfd9bb1f09d4f62" title=" " alt="" coords="732,37,876,63"/>
+<area shape="rect" id="node5" href="$namespaceadore_1_1mad.html#a70b9fe3efbb34c0f9621147e3456bfa8" title=" " alt="" coords="325,138,452,165"/>
+<area shape="rect" id="node6" href="$namespaceadore_1_1mad.html#acec540f9bf9b6eb0e027d332d3fe5577" title=" " alt="" coords="561,113,684,139"/>
+<area shape="rect" id="node9" href="$structadore_1_1view_1_1TrafficObject.html#abbe20c0f5f555f04064bbed7e5edba13" title=" " alt="" coords="295,189,482,231"/>
+<area shape="rect" id="node10" href="$structadore_1_1view_1_1TrafficObject.html#a685308490cab777265c3c91053e8d74b" title=" " alt="" coords="295,255,482,296"/>
+<area shape="rect" id="node11" href="$classadore_1_1view_1_1ALane.html#ae633a0321ddfbc46bc041d5f1378077d" title=" " alt="" coords="316,320,461,361"/>
+<area shape="rect" id="node12" href="$structadore_1_1view_1_1TrafficObject.html#a77aafcaf0cbeae67bad60cb8a7dced53" title=" " alt="" coords="295,385,482,427"/>
+<area shape="rect" id="node13" href="$structadore_1_1view_1_1TrafficObject.html#abd11271c3ee70ef21496779ce5269c02" title=" " alt="" coords="295,451,482,492"/>
+<area shape="rect" id="node14" href="$classadore_1_1view_1_1ALaneChangeView.html#a69d39d9f90f30f433c7b810480e8d696" title=" " alt="" coords="283,517,494,573"/>
+<area shape="rect" id="node15" href="$classadore_1_1view_1_1ALaneChangeView.html#aba6c97937219762de65d6c3556c888e6" title=" " alt="" coords="264,597,513,639"/>
+<area shape="rect" id="node16" href="$classadore_1_1view_1_1ALaneChangeView.html#a9713d7ef31892dca584dde8d75929f46" title=" " alt="" coords="275,663,503,704"/>
+<area shape="rect" id="node17" href="$classadore_1_1view_1_1ALaneChangeView.html#a504104cf3e97d02cd0c03064d7363c29" title=" " alt="" coords="279,728,498,769"/>
+<area shape="rect" id="node18" href="$classadore_1_1view_1_1ALaneChangeView.html#af9a6da34e4964f7737c839eb980f0f69" title=" " alt="" coords="291,793,486,835"/>
+<area shape="rect" id="node19" href="$classadore_1_1view_1_1ALaneChangeView.html#a843001a04d0823731b89ff25f75501d5" title=" " alt="" coords="291,859,486,900"/>
+<area shape="rect" id="node20" href="$structadore_1_1env_1_1VehicleMotionState9d.html#ae7d75a3f7d52a946f075e669832caa17" title="Get the time." alt="" coords="293,924,484,965"/>
+<area shape="rect" id="node21" href="$structadore_1_1env_1_1VehicleMotionState9d.html#a2547f79442e772d79fbf5051a2a08bfa" title="Get the longitudinal velocity." alt="" coords="293,989,484,1031"/>
+<area shape="rect" id="node22" href="$structadore_1_1env_1_1VehicleMotionState9d.html#a16d6d61f5dfa1028ca97d8f1a8b6e8cf" title="Get the x&#45;coordinate." alt="" coords="293,1055,484,1096"/>
+<area shape="rect" id="node23" href="$structadore_1_1env_1_1VehicleMotionState9d.html#a51e8eed0ef10d909592edcb933c1b802" title="Get the y&#45;coordinate." alt="" coords="293,1120,484,1161"/>
+<area shape="rect" id="node24" href="$classadore_1_1view_1_1ALane.html#a7995d6c08470c31414ecd7891ec16f05" title=" " alt="" coords="316,1185,461,1227"/>
+<area shape="rect" id="node25" href="$classadore_1_1env_1_1AGapRating.html#aff1fc60c18108689c722c2d8c17869ed" title=" " alt="" coords="301,1251,476,1292"/>
+<area shape="rect" id="node26" href="$classadore_1_1view_1_1ALane.html#a776918d9531af91a3317d7c6ec766a46" title=" " alt="" coords="297,1316,481,1357"/>
+<area shape="rect" id="node27" href="$classadore_1_1view_1_1ALane.html#a1b5c56e477e4aee683a785f782628b33" title=" " alt="" coords="301,1381,476,1423"/>
+<area shape="rect" id="node3" href="$namespaceadore_1_1mad.html#a618a8842fed7b9375957b1e393c58492" title=" " alt="" coords="924,113,1057,139"/>
+<area shape="rect" id="node4" href="$namespaceadore_1_1mad.html#ac61b79c007d1859f93a10c04272095a1" title=" " alt="" coords="926,50,1055,77"/>
+<area shape="rect" id="node7" href="$namespaceadore_1_1mad.html#adea062854ef0b105a3fdca8cf2aca945" title=" " alt="" coords="737,138,871,165"/>
+<area shape="rect" id="node8" href="$namespaceadore_1_1mad.html#ab58ecb752f9bbfe27832e0a2c0e22c2b" title=" " alt="" coords="739,87,869,114"/>
+</map>

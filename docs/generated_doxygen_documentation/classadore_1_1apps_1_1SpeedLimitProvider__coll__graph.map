@@ -1,0 +1,5 @@
+<map id="adore::apps::SpeedLimitProvider" name="adore::apps::SpeedLimitProvider">
+<area shape="rect" id="node1" title="A node to gather speed limit data and provide it e.g. for laneview computation." alt="" coords="101,189,334,296"/>
+<area shape="rect" id="node2" href="$classadore_1_1mad_1_1AReader.html" title=" " alt="" coords="5,5,203,127"/>
+<area shape="rect" id="node3" href="$classadore_1_1mad_1_1AWriter.html" title=" " alt="" coords="227,5,437,127"/>
+</map>

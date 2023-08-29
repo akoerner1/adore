@@ -1,0 +1,8 @@
+<map id="adore::apps::IndicatorHintsProvider::IndicatorHintsProvider" name="adore::apps::IndicatorHintsProvider::IndicatorHintsProvider">
+<area shape="rect" id="node1" title=" " alt="" coords="5,97,235,139"/>
+<area shape="rect" id="node2" href="$classadore_1_1env_1_1EnvFactoryInstance.html#a069fadea20089ddf252a244864f305c1" title=" " alt="" coords="283,13,536,39"/>
+<area shape="rect" id="node4" href="$classadore_1_1env_1_1AFactory.html#ad4c1bd2f0245e1a0533ae9704f201976" title=" " alt="" coords="322,64,497,105"/>
+<area shape="rect" id="node5" href="$classadore_1_1env_1_1AFactory.html#a81f661c576816461f1914436620ac208" title=" " alt="" coords="298,129,521,171"/>
+<area shape="rect" id="node6" href="$structadore_1_1env_1_1IndicatorHint.html#a5038a011b2e9439e57d3718e7bbd84b0" title=" " alt="" coords="316,195,503,236"/>
+<area shape="rect" id="node3" href="$classadore_1_1env_1_1EnvFactoryInstance.html#a14835a4420fb827ba3809b94a96a7660" title="Function to access singleton instance of the envFactory using magic static." alt="" coords="584,5,808,47"/>
+</map>

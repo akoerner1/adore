@@ -1,0 +1,10 @@
+<map id="adore::apps::PlotPredictionsMinimal" name="adore::apps::PlotPredictionsMinimal">
+<area shape="rect" id="node1" title="a plot module for handling prediction plots" alt="" coords="448,865,672,1133"/>
+<area shape="rect" id="node2" href="$classDLR__TS_1_1PlotLab_1_1AFigureStub.html" title=" " alt="" coords="5,461,219,685"/>
+<area shape="rect" id="node3" href="$classadore_1_1mad_1_1AReader.html" title=" " alt="" coords="243,513,440,634"/>
+<area shape="rect" id="node4" href="$structadore_1_1env_1_1VehicleMotionState9d.html" title="This struct holds the motion state of the vehicle in 9d." alt="" coords="465,447,655,700"/>
+<area shape="rect" id="node5" href="$classadore_1_1mad_1_1AReader.html" title=" " alt="" coords="680,498,885,649"/>
+<area shape="rect" id="node6" href="$classadore_1_1PLOT_1_1PredictionConfig.html" title=" " alt="" coords="909,535,1123,612"/>
+<area shape="rect" id="node7" href="$structadore_1_1PLOT_1_1PredictionConfig_1_1prediction__config.html" title=" " alt="" coords="909,219,1123,325"/>
+<area shape="rect" id="node8" href="$structadore_1_1PLOT_1_1PredictionConfig_1_1prediction__config_1_1color__range.html" title=" " alt="" coords="903,5,1129,127"/>
+</map>

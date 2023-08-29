@@ -1,0 +1,20 @@
+<map id="CSVLog::lvlToString" name="CSVLog::lvlToString">
+<area shape="rect" id="node1" title="get string for log level" alt="" coords="705,284,852,311"/>
+<area shape="rect" id="node2" href="$classCSVLog.html#a42ea472abab2f1edd941af3912edcb1d" title="general log generator for buffer" alt="" coords="463,259,651,285"/>
+<area shape="rect" id="node13" href="$classCSVLog.html#aaf9a8935942eaca9839f0392a2815535" title="general log generator for console" alt="" coords="456,309,657,336"/>
+<area shape="rect" id="node3" href="$classCSVLog.html#abf2187c78e4eb54e1724438a1074aaad" title="generate log entry in file" alt="" coords="271,107,394,133"/>
+<area shape="rect" id="node8" href="$classCSVLog.html#a483aac07b38a517ad8f045a34cffdcf9" title="general log generator method" alt="" coords="265,284,400,311"/>
+<area shape="rect" id="node4" href="$classCSVLog.html#ae2996287c12ff5184e0d237170edf0b5" title="log on error level in file" alt="" coords="31,5,184,32"/>
+<area shape="rect" id="node5" href="$classCSVLog.html#a053330a004ebeb4ce874c53ed8e73f8d" title="log on info level in file" alt="" coords="34,56,181,83"/>
+<area shape="rect" id="node6" href="$classCSVLog.html#a2e7222db9b74c4a68512bf9c4281080b" title="log on trace level in file" alt="" coords="29,107,185,133"/>
+<area shape="rect" id="node7" href="$classCSVLog.html#af6c532187a06fb430d09255408189906" title="log on warning level in file" alt="" coords="20,157,195,184"/>
+<area shape="rect" id="node9" href="$classCSVLog.html#a99f056783f1903b0332a39732b79a014" title="general log on error level" alt="" coords="42,208,173,235"/>
+<area shape="rect" id="node10" href="$classCSVLog.html#a5a6e01a0b57519dcfa1b1b94017f79f8" title="general log on info level" alt="" coords="45,259,169,285"/>
+<area shape="rect" id="node11" href="$classCSVLog.html#a43fd60ab05f615aefdd0af7d3f93840e" title="general log on trace level" alt="" coords="41,309,174,336"/>
+<area shape="rect" id="node12" href="$classCSVLog.html#a259cf3f2a38398a047342ec4c2820f5c" title="general log on warning level" alt="" coords="31,360,183,387"/>
+<area shape="rect" id="node14" href="$classCSVLog.html#a2334ba89101b21b6548d412643a22ec3" title="generate log entry in console" alt="" coords="257,461,408,488"/>
+<area shape="rect" id="node15" href="$classCSVLog.html#a0177263b40ad2573d573b9e7201d2acb" title="log on error level in console" alt="" coords="16,411,199,437"/>
+<area shape="rect" id="node16" href="$classCSVLog.html#adbdc18656cb435042e287ecb0765f9dd" title="log on info level in console" alt="" coords="19,461,195,488"/>
+<area shape="rect" id="node17" href="$classCSVLog.html#ab8505e316b64571c70ba95cfeca4ccb6" title="log on trace level in console" alt="" coords="15,512,200,539"/>
+<area shape="rect" id="node18" href="$classCSVLog.html#a38553a9f280cec76680df43316261885" title="log on warning level in console" alt="" coords="5,563,209,589"/>
+</map>
