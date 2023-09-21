@@ -51,6 +51,10 @@ jobs:
         run: |
           df -h
           source adore.env && make build
+      - name: Build All
+        run: |
+          df -h
+          source adore.env && make build_all
       - name: Build ADORe CLI
         run: |
           df -h
