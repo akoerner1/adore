@@ -1,0 +1,1942 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.17">
+    
+    
+      
+        <title>ADORe CLI - Advanced Development Environment - ADORe Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e37652d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#adore-cli-advanced-development-environment" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="ADORe Documentation" class="md-header__button md-logo" aria-label="ADORe Documentation" data-md-component="logo">
+      
+  <img src="../../../../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ADORe Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ADORe CLI - Advanced Development Environment
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/eclipse-adore/adore" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="ADORe Documentation" class="md-nav__button md-logo" aria-label="ADORe Documentation" data-md-component="logo">
+      
+  <img src="../../../../img/logo.png" alt="logo">
+
+    </a>
+    ADORe Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/eclipse-adore/adore" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About ADORe
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../quick_start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quick Start
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../getting_started/getting_started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../getting_started/system_requirements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    System Requirements
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../system_and_development/anonymous_cloning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Anonymous Cloning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../getting_started/prerequisites/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Prerequisites
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../getting_started/installing_docker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installing Docker
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../getting_started/running_your_first_scenario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Running Your First Scenario In ADORe
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Technical Reference Manual
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Technical Reference Manual
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../technical_reference_manual/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Table of Contents
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../system_and_development/documentation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Documentation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ROS_NODES_SUMMARY/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ADORe ROS Nodes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adore_ros2_msgs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ADORe ROS Messages
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adore_ros2_msgs/topics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ADORe ROS Topics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    ADORe User Libraries
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            ADORe User Libraries
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../libraries/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ADORe User Libraries
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../libraries/library_creation_guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Creating A New Library
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../libraries/cmake_library_auto_generation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ADORe CMake Target/Library Auto-Generation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_7" id="__nav_4_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    ADORe REST API
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_7">
+            <span class="md-nav__icon md-icon"></span>
+            ADORe REST API
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/adore_api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About The ADORe REST API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/adore_api/adore_mission_control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ADORe Mission Control Web Interface
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/adore_api/api_reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ADORE API Reference
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/adore_api/api_reference_curl_examples/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ADORE API Examples
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../system_and_development/creating_a_new_node/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Creating A New Node
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../visualization/lichtblick/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Scenario Visualization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../system_and_development/scenario_generation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Creating A New Scenario
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_11" id="__nav_4_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    ADORe CLI
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_11">
+            <span class="md-nav__icon md-icon"></span>
+            ADORe CLI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adore_cli/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ADORe CLI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../system_and_development/multiarch_support/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Multi-arch Build Support
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Submodules
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../problems_and_solutions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../licensing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Licensing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../publications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Publicaitons
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CONTRIBUTING/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contributing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CODE_OF_CONDUCT/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Code of Conduct
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../styleguide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Style Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contact
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Quick Start
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✨ Key Features
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="✨ Key Features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#three-layer-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏗️ Three-Layer Architecture
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#smart-build-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Smart Build System
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#developer-experience" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ Developer Experience
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏛️ Architecture
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Usage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎯 Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#essential-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Essential Commands
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#daily-development-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Daily Development Workflow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔨 Requirements Management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔨 Requirements Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file-types-supported" class="md-nav__link">
+    <span class="md-ellipsis">
+      File Types Supported
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Files
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-deb-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom .deb Packages
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Advanced Usage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Advanced Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#build-targets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Build Targets
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Environment Variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#registry-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Registry Integration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cicd-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌐 CI/CD Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🌐 CI/CD Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#github-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub Actions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-ci-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key CI Features
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 Troubleshooting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔍 Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Issues
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debug-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Debug Information
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 Architecture Details
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 Architecture Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#intelligent-tagging-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intelligent Tagging System
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#change-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Change Detection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#registry-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Registry Strategy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributing" class="md-nav__link">
+    <span class="md-ellipsis">
+      🤝 Contributing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🤝 Contributing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#development-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding Features
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    <span class="md-ellipsis">
+      📄 License
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="adore-cli-advanced-development-environment">ADORe CLI - Advanced Development Environment</h1>
+<p><a href="https://www.docker.com/"><img alt="Docker" src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&amp;logo=docker&amp;logoColor=white" /></a>
+<a href="https://docs.ros.org/en/jazzy/"><img alt="ROS2" src="https://img.shields.io/badge/ros2-jazzy-blue?style=for-the-badge&amp;logo=ros&amp;logoColor=white" /></a>
+<a href="https://ubuntu.com/"><img alt="Ubuntu" src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&amp;logo=ubuntu&amp;logoColor=white" /></a></p>
+<p>A sophisticated, multi-layer Docker-based development environment for ROS2 projects with intelligent caching, automated dependency management, and seamless developer experience.</p>
+<h2 id="quick-start">🚀 Quick Start</h2>
+<pre><code class="language-bash"># Clone and setup
+git clone &lt;your-repo&gt;
+cd &lt;your-repo&gt;
+git submodule update --init --recursive
+
+# Build the complete environment
+make build
+
+# Start developing
+make cli
+</code></pre>
+<h2 id="key-features">✨ Key Features</h2>
+<h3 id="three-layer-architecture">🏗️ Three-Layer Architecture</h3>
+<ul>
+<li><strong>Base Foundation</strong>: Ubuntu 24.04 + ROS2 Jazzy core (highly cacheable, user-agnostic)</li>
+<li><strong>Core Environment</strong>: Complete toolchain + all discovered dependencies (shareable across users)  </li>
+<li><strong>User Layer</strong>: Personal customization + .deb packages + user account (user-specific)</li>
+</ul>
+<h3 id="smart-build-system">🎯 Smart Build System</h3>
+<ul>
+<li><strong>Intelligent Caching</strong>: Only rebuilds changed layers using SHA256 fingerprinting</li>
+<li><strong>Requirements Discovery</strong>: Automatically finds and installs from <code>.system</code>, <code>.pip3</code>, <code>.ppa</code> files</li>
+<li><strong>Package Management</strong>: Installs custom <code>.deb</code> packages from <code>vendor/</code> directory</li>
+<li><strong>Cross-Platform</strong>: Native ARM64 and x86_64 support with cross-compilation</li>
+<li><strong>Registry Integration</strong>: Pull/push layer caching for CI/CD optimization</li>
+</ul>
+<h3 id="developer-experience">🛠️ Developer Experience</h3>
+<ul>
+<li><strong>Interactive CLI</strong>: Seamless container attach/detach with persistent state</li>
+<li><strong>Hot Reloading</strong>: Live code mounting for immediate development feedback</li>
+<li><strong>Shell Integration</strong>: zsh with oh-my-zsh and custom ADORe CLI prompt</li>
+<li><strong>History Persistence</strong>: Command history preserved across sessions</li>
+<li><strong>Change Detection</strong>: Automatically detects requirement and package changes</li>
+</ul>
+<h2 id="architecture">🏛️ Architecture</h2>
+<pre><code>┌─────────────────────────────────────────────────────────────┐
+│                    ADORe CLI Architecture                    │
+├─────────────────────────────────────────────────────────────┤
+│  User Layer (adore_cli:tag)                                 │
+│  ├─ User account &amp; shell environment                        │
+│  ├─ .deb packages from vendor/                              │
+│  ├─ Personal development tools                              │
+│  └─ Final development-ready image                           │
+├─────────────────────────────────────────────────────────────┤
+│  Core Environment (adore_cli_core:tag)                      │
+│  ├─ All project requirements (.system, .pip3, .ppa)        │
+│  ├─ ROS2 complete toolchain and build tools                 │
+│  ├─ Development libraries and dependencies                  │
+│  └─ User-agnostic shareable environment                     │
+├─────────────────────────────────────────────────────────────┤
+│  Base Foundation (adore_cli_base:tag)                       │
+│  ├─ Ubuntu 24.04 Noble + ROS2 Jazzy foundation             │
+│  ├─ System fundamentals and container runtime              │
+│  ├─ Oh-my-zsh and shell configuration                       │
+│  └─ Highly cacheable, globally shareable                    │
+└─────────────────────────────────────────────────────────────┘
+</code></pre>
+<h2 id="prerequisites">📋 Prerequisites</h2>
+<ul>
+<li><strong>Docker</strong>: 28.0+ with BuildKit support</li>
+<li><strong>OS</strong>: Linux (Ubuntu 20.04+ recommended)</li>
+<li><strong>Memory</strong>: 8GB+ RAM, 20GB+ free disk space</li>
+<li><strong>Make</strong>: GNU Make for build orchestration</li>
+<li><strong>Git</strong>: For submodule management</li>
+</ul>
+<pre><code class="language-bash"># Install Docker
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+sudo usermod -aG docker $USER
+
+# Install Make
+sudo apt update &amp;&amp; sudo apt install make git
+
+# Logout and login to apply Docker group membership
+</code></pre>
+<h2 id="usage">🎯 Usage</h2>
+<h3 id="essential-commands">Essential Commands</h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+<th>Use Case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>make build</code></td>
+<td>Build complete three-layer environment</td>
+<td>First setup, major changes</td>
+</tr>
+<tr>
+<td><code>make cli</code></td>
+<td>Start/attach to development environment</td>
+<td>Daily development</td>
+</tr>
+<tr>
+<td><code>make run cmd="&lt;command&gt;"</code></td>
+<td>Execute command in container</td>
+<td>Running tests, builds</td>
+</tr>
+<tr>
+<td><code>make stop</code></td>
+<td>Stop running container</td>
+<td>End development session</td>
+</tr>
+<tr>
+<td><code>make clean</code></td>
+<td>Remove all images and artifacts</td>
+<td>Complete reset</td>
+</tr>
+</tbody>
+</table>
+<h3 id="daily-development-workflow">Daily Development Workflow</h3>
+<pre><code class="language-bash"># Start development session
+make cli
+
+# Inside container - your code is mounted at /tmp/adore
+cd /tmp/adore
+
+# Build your ROS2 packages
+colcon build
+
+# Run your code
+ros2 launch my_package my_launch.py
+
+# Exit (container keeps running)
+exit
+
+# Reattach to same session
+make cli
+
+# Stop when done
+make stop
+</code></pre>
+<h2 id="requirements-management">🔨 Requirements Management</h2>
+<p>ADORe CLI automatically discovers and installs dependencies from your project:</p>
+<h3 id="file-types-supported">File Types Supported</h3>
+<ul>
+<li><strong><code>requirements.system</code></strong> or <strong><code>*.system</code></strong>: APT package requirements</li>
+<li><strong><code>requirements.pip3</code></strong> or <strong><code>*.pip3</code></strong>: Python package requirements  </li>
+<li><strong><code>requirements.ppa</code></strong> or <strong><code>*.ppa</code></strong>: Ubuntu PPA repositories</li>
+</ul>
+<h3 id="example-files">Example Files</h3>
+<p><strong>requirements.system</strong>:</p>
+<pre><code>ros-jazzy-rclcpp
+vim
+git
+cmake
+build-essential
+</code></pre>
+<p><strong>requirements.pip3</strong>:</p>
+<pre><code>numpy
+matplotlib
+rosdep
+colcon-common-extensions
+</code></pre>
+<p><strong>requirements.ppa</strong>:</p>
+<pre><code>ppa:deadsnakes/ppa
+</code></pre>
+<h3 id="custom-deb-packages">Custom .deb Packages</h3>
+<p>Place <code>.deb</code> files in <code>vendor/</code> directory for automatic installation:</p>
+<pre><code>vendor/
+├── my-custom-lib_1.0.0_amd64.deb
+├── another-package_2.1.0_amd64.deb
+└── subdirectory/
+    └── nested-package_1.5.0_amd64.deb
+</code></pre>
+<h2 id="advanced-usage">🔧 Advanced Usage</h2>
+<h3 id="build-targets">Build Targets</h3>
+<pre><code class="language-bash"># Force complete rebuild (ignores cache)
+make rebuild_force
+
+# Rebuild from specific layer
+make rebuild_from_layer LAYER=base    # Rebuild all layers
+make rebuild_from_layer LAYER=core    # Rebuild core + user
+make rebuild_from_layer LAYER=user    # Rebuild user only
+
+# Check build status
+make build_status
+
+# Show configuration
+make adore_cli_info
+</code></pre>
+<h3 id="environment-variables">Environment Variables</h3>
+<pre><code class="language-bash"># Architecture selection
+export ARCH=amd64  # or arm64
+
+# ROS Distribution
+export ROS_DISTRO=jazzy
+
+# Custom hostname
+export HOSTNAME=my-dev-environment
+</code></pre>
+<h3 id="registry-integration">Registry Integration</h3>
+<pre><code class="language-bash"># Set repository for registry operations
+export GITHUB_REPOSITORY=your-org/your-repo
+
+# Pull base/core images from registry
+make try_pull_base_images
+
+# Push base/core images to registry
+make push_base_images
+
+# Check registry status
+make registry_status
+</code></pre>
+<h2 id="cicd-integration">🌐 CI/CD Integration</h2>
+<p>ADORe CLI supports automated builds and registry integration:</p>
+<h3 id="github-actions">GitHub Actions</h3>
+<p>The project includes reusable workflows:
+- <strong>Native x86_64 builds</strong>: <code>ubuntu-latest</code> runners
+- <strong>Native ARM64 builds</strong>: <code>ubuntu-24.04-arm</code> runners
+- <strong>Cross-compilation</strong>: x86_64 to ARM64
+- <strong>Registry push</strong>: Automatic base/core layer sharing</p>
+<h3 id="key-ci-features">Key CI Features</h3>
+<ul>
+<li>Runs on all branches and pull requests</li>
+<li>Pushes base images only from origin repository (not forks)</li>
+<li>Intelligent caching using registry layers</li>
+<li>Parallel builds for different architectures</li>
+<li>Comprehensive logging and artifact uploads</li>
+</ul>
+<h2 id="troubleshooting">🔍 Troubleshooting</h2>
+<h3 id="common-issues">Common Issues</h3>
+<p><strong>Environment Changes Detected</strong>:</p>
+<pre><code class="language-bash"># Check what changed
+make show_changes
+
+# Rebuild affected layers
+make rebuild_from_layer LAYER=core  # For requirements changes
+make rebuild_from_layer LAYER=user  # For .deb package changes
+</code></pre>
+<p><strong>Build Failures</strong>:</p>
+<pre><code class="language-bash"># Check Docker status
+docker info
+
+# Clean Docker cache
+docker system prune -f
+
+# Force complete rebuild
+make rebuild_force
+</code></pre>
+<p><strong>Container Issues</strong>:</p>
+<pre><code class="language-bash"># Debug container interactively
+make debug_run
+
+# Debug as root
+make debug_run_root
+
+# Check container logs
+docker logs adore_cli_&lt;tag&gt;
+</code></pre>
+<h3 id="debug-information">Debug Information</h3>
+<pre><code class="language-bash"># Show detailed configuration
+make adore_cli_info
+
+# Debug requirements processing
+cd adore_cli_core &amp;&amp; make debug_requirements
+
+# Debug package installation
+cd adore_cli &amp;&amp; make debug_packages
+
+# Test ROS2 installation
+make test_ros2_installation
+</code></pre>
+<h2 id="architecture-details">📚 Architecture Details</h2>
+<h3 id="intelligent-tagging-system">Intelligent Tagging System</h3>
+<p>ADORe CLI uses sophisticated tagging based on multiple factors:</p>
+<ul>
+<li><strong>Base Layer</strong>: <code>adore_cli_base:&lt;arch&gt;_&lt;branch&gt;_&lt;hash&gt;</code></li>
+<li><strong>Core Layer</strong>: <code>adore_cli_core:&lt;arch&gt;_&lt;branch&gt;_&lt;hash&gt;_RH&lt;requirements_hash&gt;</code></li>
+<li><strong>User Layer</strong>: <code>adore_cli:&lt;arch&gt;_&lt;branch&gt;_&lt;hash&gt;_PH&lt;packages_hash&gt;_&lt;user&gt;_UID&lt;uid&gt;GID&lt;gid&gt;</code></li>
+</ul>
+<h3 id="change-detection">Change Detection</h3>
+<p>The system automatically detects changes and rebuilds only necessary layers:
+- <strong>Base</strong>: Rebuilds when ADORe CLI code changes
+- <strong>Core</strong>: Rebuilds when requirements files change
+- <strong>User</strong>: Rebuilds when .deb packages change</p>
+<h3 id="registry-strategy">Registry Strategy</h3>
+<ul>
+<li><strong>Base/Core layers</strong>: Shared across users and environments</li>
+<li><strong>User layers</strong>: Never pushed (user-specific)</li>
+<li><strong>CI/CD optimization</strong>: Pull cached layers before building</li>
+<li><strong>Security</strong>: Only origin repository can push images</li>
+</ul>
+<h2 id="contributing">🤝 Contributing</h2>
+<h3 id="development-setup">Development Setup</h3>
+<pre><code class="language-bash"># Clone for development
+git clone &lt;adore-cli-repo&gt;
+cd adore-cli
+git submodule update --init --recursive
+
+# Test changes
+make build
+make cli
+</code></pre>
+<h3 id="adding-features">Adding Features</h3>
+<ol>
+<li><strong>Add Requirements</strong>: Place new <code>.system</code>, <code>.pip3</code>, or <code>.ppa</code> files in your project</li>
+<li><strong>Add Packages</strong>: Place <code>.deb</code> files in <code>vendor/</code> directory  </li>
+<li><strong>Test</strong>: Run <code>make rebuild_from_layer LAYER=core</code> or <code>LAYER=user</code></li>
+<li><strong>Verify</strong>: Use <code>make cli</code> to test the new environment</li>
+</ol>
+<h2 id="license">📄 License</h2>
+<p>This project is licensed under the Eclipse Public License - v 2.0 - see the <a href="LICENSE">LICENSE</a> file for details.</p>
+<hr />
+<p><strong>Made with ❤️ for the ROS2 development community</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,2463 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.17">
+    
+    
+      
+        <title>ADORe ROS2 Model Checker for Vehicle Safety Monitoring in ADORe - ADORe Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e37652d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#adore-ros2-model-checker-for-vehicle-safety-monitoring-in-adore" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="ADORe Documentation" class="md-header__button md-logo" aria-label="ADORe Documentation" data-md-component="logo">
+      
+  <img src="../../../../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ADORe Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ADORe ROS2 Model Checker for Vehicle Safety Monitoring in ADORe
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/eclipse-adore/adore" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="ADORe Documentation" class="md-nav__button md-logo" aria-label="ADORe Documentation" data-md-component="logo">
+      
+  <img src="../../../../img/logo.png" alt="logo">
+
+    </a>
+    ADORe Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/eclipse-adore/adore" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About ADORe
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../quick_start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quick Start
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../getting_started/getting_started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../getting_started/system_requirements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    System Requirements
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../system_and_development/anonymous_cloning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Anonymous Cloning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../getting_started/prerequisites/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Prerequisites
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../getting_started/installing_docker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installing Docker
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../getting_started/running_your_first_scenario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Running Your First Scenario In ADORe
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Technical Reference Manual
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Technical Reference Manual
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../technical_reference_manual/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Table of Contents
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../system_and_development/documentation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Documentation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ROS_NODES_SUMMARY/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ADORe ROS Nodes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adore_ros2_msgs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ADORe ROS Messages
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adore_ros2_msgs/topics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ADORe ROS Topics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    ADORe User Libraries
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            ADORe User Libraries
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../libraries/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ADORe User Libraries
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../libraries/library_creation_guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Creating A New Library
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../libraries/cmake_library_auto_generation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ADORe CMake Target/Library Auto-Generation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_7" id="__nav_4_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    ADORe REST API
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_7">
+            <span class="md-nav__icon md-icon"></span>
+            ADORe REST API
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/adore_api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About The ADORe REST API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/adore_api/adore_mission_control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ADORe Mission Control Web Interface
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/adore_api/api_reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ADORE API Reference
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/adore_api/api_reference_curl_examples/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ADORE API Examples
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../system_and_development/creating_a_new_node/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Creating A New Node
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../visualization/lichtblick/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Scenario Visualization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../system_and_development/scenario_generation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Creating A New Scenario
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_11" id="__nav_4_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    ADORe CLI
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_11">
+            <span class="md-nav__icon md-icon"></span>
+            ADORe CLI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adore_cli/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ADORe CLI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../system_and_development/multiarch_support/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Multi-arch Build Support
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Submodules
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../problems_and_solutions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../licensing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Licensing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../publications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Publicaitons
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CONTRIBUTING/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contributing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CODE_OF_CONDUCT/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Code of Conduct
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../styleguide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Style Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contact
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Features
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proposition-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proposition Categories
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#safety-proposition-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Safety Proposition Categories
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-system-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing System Requirements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installing System Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ros2-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      ROS2 Setup
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Start
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quick Start">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-generate-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Generate Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-configure-data-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Configure Data Sources
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3a-online-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      3a. Online Monitoring
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3b-offline-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      3b. Offline Analysis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-source-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Source Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formula-types-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formula Types Reference
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage Examples
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Usage Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#monitor-with-debug-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monitor with Debug Output
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monitor-and-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monitor and Log
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debug-mode-with-data-recording" class="md-nav__link">
+    <span class="md-ellipsis">
+      Debug Mode with Data Recording
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analyze-recorded-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Analyze Recorded Data
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#command-line-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command Line Options
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#output-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      Output Format
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extending-the-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extending the Tool
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Extending the Tool">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adding-custom-propositions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding Custom Propositions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-evaluation-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom Evaluation Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-transformations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Transformations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dependencies
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Issues
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debug-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Debug Tips
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performance-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance Considerations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Output
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proposition-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proposition Descriptions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Proposition Descriptions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acceleration_compliance" class="md-nav__link">
+    <span class="md-ellipsis">
+      ACCELERATION_COMPLIANCE
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deceleration_compliance" class="md-nav__link">
+    <span class="md-ellipsis">
+      DECELERATION_COMPLIANCE
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-an-apt-deb-package" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building an APT .deb package
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="adore-ros2-model-checker-for-vehicle-safety-monitoring-in-adore">ADORe ROS2 Model Checker for Vehicle Safety Monitoring in ADORe</h1>
+<p>A tool for monitoring and verifying safety properties of autonomous vehicles 
+using Computation Tree Logic (CTL) model checking. This tool can analyze both 
+live ROS2 data streams and offline bag data files to ensure vehicles comply with 
+safety requirements.</p>
+<p>This tool is a WORK IN PROGRESS and likely has many bugs.</p>
+<h2 id="features">Features</h2>
+<ul>
+<li><strong>API</strong>: Included REST API/interface for invoking the model checker 
+    <a href="adore_model_checker_api_reference.md">Model Checker API Reference</a></li>
+<li><strong>Dual Mode Operation</strong>: Online monitoring of live ROS2 topics and offline analysis of bag files</li>
+<li><strong>Configurable Safety Properties</strong>: 50+ built-in safety propositions organized into 10 categories</li>
+<li><strong>Multi-Vehicle Support</strong>: Monitor multiple vehicles simultaneously with individual configurations</li>
+<li><strong>Flexible Data Sources</strong>: Map any ROS2 topics to safety propositions with field path extraction</li>
+<li><strong>CTL Model Checking</strong>: Uses formal verification techniques to prove safety properties</li>
+<li><strong>Extensible Framework</strong>: Easy to add custom safety propositions and evaluation logic</li>
+<li><strong>Comprehensive Reporting</strong>: Detailed analysis results with statistics and pass/fail status</li>
+<li><strong>Auto-importing ROS messages</strong>: All defined ROS messages are auto-imported with the <code>ROSMessageImporter</code> class </li>
+<li><strong>Dictionary Based Topic Subscription</strong>: All subscribed ROS topic messages are converted to dictionaries with the <code>ROSMarshaller</code> class </li>
+</ul>
+<h2 id="proposition-categories">Proposition Categories</h2>
+<h2 id="safety-proposition-categories">Safety Proposition Categories</h2>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Proposition</th>
+<th>Implementation Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Basic Safety</strong></td>
+<td>EGO_SPEED</td>
+<td>IMPLEMENTED</td>
+</tr>
+<tr>
+<td></td>
+<td>NEAR_GOAL</td>
+<td>IMPLEMENTED</td>
+</tr>
+<tr>
+<td></td>
+<td>SAFE_DISTANCE_X</td>
+<td>IMPLEMENTED</td>
+</tr>
+<tr>
+<td></td>
+<td>SAFE_DISTANCE_Y</td>
+<td>IMPLEMENTED</td>
+</tr>
+<tr>
+<td></td>
+<td>DECELERATION</td>
+<td>IMPLEMENTED</td>
+</tr>
+<tr>
+<td></td>
+<td>IN_COLLISION</td>
+<td>NOT IMPLEMENTED</td>
+</tr>
+<tr>
+<td><strong>Lane Compliance</strong></td>
+<td>LANE_KEEPING</td>
+<td>IMPLEMENTED</td>
+</tr>
+<tr>
+<td></td>
+<td>LANE_CHANGE_SAFE</td>
+<td>NOT IMPLEMENTED</td>
+</tr>
+<tr>
+<td></td>
+<td>ROAD_BOUNDARY_RESPECT</td>
+<td>NOT IMPLEMENTED</td>
+</tr>
+<tr>
+<td></td>
+<td>WRONG_WAY_DRIVING</td>
+<td>NOT IMPLEMENTED</td>
+</tr>
+<tr>
+<td><strong>Traffic Rules</strong></td>
+<td>TRAFFIC_LIGHT_COMPLIANCE</td>
+<td>NOT IMPLEMENTED</td>
+</tr>
+<tr>
+<td></td>
+<td>STOP_SIGN_COMPLIANCE</td>
+<td>NOT IMPLEMENTED</td>
+</tr>
+<tr>
+<td></td>
+<td>SPEED_LIMIT_COMPLIANCE</td>
+<td>NOT IMPLEMENTED</td>
+</tr>
+<tr>
+<td></td>
+<td>YIELD_COMPLIANCE</td>
+<td>NOT IMPLEMENTED</td>
+</tr>
+<tr>
+<td></td>
+<td>TURN_SIGNAL_USAGE</td>
+<td>NOT IMPLEMENTED</td>
+</tr>
+<tr>
+<td><strong>Dynamic Safety</strong></td>
+<td>TIME_TO_COLLISION</td>
+<td>NOT IMPLEMENTED</td>
+</tr>
+<tr>
+<td></td>
+<td>EMERGENCY_BRAKING</td>
+<td>NOT IMPLEMENTED</td>
+</tr>
+<tr>
+<td></td>
+<td>OBSTACLE_AVOIDANCE</td>
+<td>NOT IMPLEMENTED</td>
+</tr>
+<tr>
+<td></td>
+<td>PEDESTRIAN_SAFETY</td>
+<td>NOT IMPLEMENTED</td>
+</tr>
+<tr>
+<td></td>
+<td>CYCLIST_SAFETY</td>
+<td>NOT IMPLEMENTED</td>
+</tr>
+<tr>
+<td></td>
+<td>BLIND_SPOT_MONITORING</td>
+<td>NOT IMPLEMENTED</td>
+</tr>
+<tr>
+<td></td>
+<td>ACCELERATION_COMPLIANCE</td>
+<td>IMPLEMENTED</td>
+</tr>
+<tr>
+<td></td>
+<td>DECELERATION_COMPLIANCE</td>
+<td>IMPLEMENTED</td>
+</tr>
+<tr>
+<td><strong>Behavioral Smoothness</strong></td>
+<td>SMOOTH_ACCELERATION</td>
+<td>NOT IMPLEMENTED</td>
+</tr>
+<tr>
+<td></td>
+<td>SMOOTH_STEERING</td>
+<td>IMPLEMENTED</td>
+</tr>
+<tr>
+<td></td>
+<td>SMOOTH_BRAKING</td>
+<td>NOT IMPLEMENTED</td>
+</tr>
+<tr>
+<td></td>
+<td>COMFORT_ZONE</td>
+<td>NOT IMPLEMENTED</td>
+</tr>
+<tr>
+<td><strong>Intersection Behavior</strong></td>
+<td>INTERSECTION_APPROACH</td>
+<td>NOT IMPLEMENTED</td>
+</tr>
+<tr>
+<td></td>
+<td>RIGHT_OF_WAY</td>
+<td>NOT IMPLEMENTED</td>
+</tr>
+<tr>
+<td></td>
+<td>INTERSECTION_CLEARANCE</td>
+<td>NOT IMPLEMENTED</td>
+</tr>
+<tr>
+<td></td>
+<td>TURNING_BEHAVIOR</td>
+<td>NOT IMPLEMENTED</td>
+</tr>
+<tr>
+<td><strong>System Health</strong></td>
+<td>SENSOR_HEALTH</td>
+<td>NOT IMPLEMENTED</td>
+</tr>
+<tr>
+<td></td>
+<td>LOCALIZATION_ACCURACY</td>
+<td>NOT IMPLEMENTED</td>
+</tr>
+<tr>
+<td></td>
+<td>COMMUNICATION_STATUS</td>
+<td>NOT IMPLEMENTED</td>
+</tr>
+<tr>
+<td></td>
+<td>SYSTEM_RESPONSE_TIME</td>
+<td>NOT IMPLEMENTED</td>
+</tr>
+<tr>
+<td></td>
+<td>PATH_PLANNING_VALIDITY</td>
+<td>NOT IMPLEMENTED</td>
+</tr>
+<tr>
+<td><strong>Environmental Adaptation</strong></td>
+<td>WEATHER_ADAPTATION</td>
+<td>NOT IMPLEMENTED</td>
+</tr>
+<tr>
+<td></td>
+<td>VISIBILITY_ADAPTATION</td>
+<td>NOT IMPLEMENTED</td>
+</tr>
+<tr>
+<td></td>
+<td>ROAD_CONDITION_ADAPTATION</td>
+<td>NOT IMPLEMENTED</td>
+</tr>
+<tr>
+<td></td>
+<td>TRAFFIC_DENSITY_ADAPTATION</td>
+<td>NOT IMPLEMENTED</td>
+</tr>
+<tr>
+<td><strong>Mission Efficiency</strong></td>
+<td>ROUTE_OPTIMIZATION</td>
+<td>NOT IMPLEMENTED</td>
+</tr>
+<tr>
+<td></td>
+<td>FUEL_EFFICIENCY</td>
+<td>NOT IMPLEMENTED</td>
+</tr>
+<tr>
+<td></td>
+<td>TIME_EFFICIENCY</td>
+<td>NOT IMPLEMENTED</td>
+</tr>
+<tr>
+<td></td>
+<td>PARKING_BEHAVIOR</td>
+<td>NOT IMPLEMENTED</td>
+</tr>
+<tr>
+<td><strong>Advanced Maneuvers</strong></td>
+<td>OVERTAKING_SAFETY</td>
+<td>NOT IMPLEMENTED</td>
+</tr>
+<tr>
+<td></td>
+<td>MERGING_BEHAVIOR</td>
+<td>NOT IMPLEMENTED</td>
+</tr>
+<tr>
+<td></td>
+<td>ROUNDABOUT_BEHAVIOR</td>
+<td>NOT IMPLEMENTED</td>
+</tr>
+<tr>
+<td></td>
+<td>CONSTRUCTION_ZONE_BEHAVIOR</td>
+<td>NOT IMPLEMENTED</td>
+</tr>
+</tbody>
+</table>
+<h2 id="installation">Installation</h2>
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+<li>ROS2 (Foxy, Galactic, Humble, or Iron)</li>
+<li>Python 3.8+</li>
+</ul>
+<h2 id="installing-system-requirements">Installing System Requirements</h2>
+<p>System-level dependencies are listed in the <code>requirements.system</code> file, 
+with one package name per line. Lines starting with <code>#</code> are treated as comments.
+For inline comments, everything after the first <code>#</code> on a line will be ignored 
+by the installation command.</p>
+<p>You can install all necessary <code>apt</code> packages by running the following command in your terminal:</p>
+<pre><code class="language-bash">sudo apt-get update
+grep -v '^#' requirements.system | sed 's/#.*//' | xargs sudo apt-get install -y
+</code></pre>
+<p>Installing required Python packages:</p>
+<pre><code class="language-bash">pip3 install -r requirements.pip3
+</code></pre>
+<h3 id="ros2-setup">ROS2 Setup</h3>
+<p>Make sure your ROS2 environment is sourced:</p>
+<pre><code class="language-bash">source /opt/ros/&lt;your-ros-distro&gt;/setup.bash
+</code></pre>
+<h2 id="quick-start">Quick Start</h2>
+<h3 id="1-generate-configuration">1. Generate Configuration</h3>
+<p>Create a minimal configuration file:</p>
+<pre><code class="language-bash">python3 adore_model_checker.py --create-minimal-config minimal_config.yaml
+</code></pre>
+<h3 id="2-configure-data-sources">2. Configure Data Sources</h3>
+<p>Edit the configuration file to map your ROS2 topics:</p>
+<pre><code class="language-yaml">vehicles:
+  - id: 0
+    proposition_groups:
+      basic_safety:
+        enabled: true
+        description: &quot;Core safety propositions&quot;
+
+    propositions:
+      EGO_SPEED:
+        enabled: true
+        atomic_prop: 'speed_safe'
+        formula_type: 'always'
+        threshold: 30.0
+        data_sources:
+          vehicle_state:
+            topic: '/ego_vehicle/vehicle_state/dynamic'
+            field_path: 'vx'
+            transform_function: 'abs'
+            cache_duration: 0.1
+        evaluation_function: 'speed_limit_evaluator'
+</code></pre>
+<h3 id="3a-online-monitoring">3a. Online Monitoring</h3>
+<p>Monitor a live vehicle for 60 seconds:</p>
+<pre><code class="language-bash">python3 adore_model_checker.py --mode online --config your_config.yaml --vehicle-id 0 --duration 60
+</code></pre>
+<h3 id="3b-offline-analysis">3b. Offline Analysis</h3>
+<p>Analyze offline bag data:</p>
+<pre><code class="language-bash">python3 adore_model_checker.py --mode offline --config your_config.yaml --bag-file data.bag
+</code></pre>
+<h2 id="configuration">Configuration</h2>
+<p>The tool uses YAML configuration files to specify:</p>
+<ul>
+<li>Vehicle data source mappings</li>
+<li>Enabled safety proposition groups</li>
+<li>Individual proposition settings with data sources</li>
+<li>Safety parameters and thresholds</li>
+<li>Monitoring frequency and buffer settings</li>
+</ul>
+<h3 id="example-configuration">Example Configuration</h3>
+<pre><code class="language-yaml">monitoring:
+  monitoring_frequency: 10.0
+  buffer_size: 1000
+  log_level: INFO
+  debug_mode: false
+
+safety_parameters:
+  max_speed: 30.0
+  safe_distance_lateral: 1.5
+  time_to_collision_threshold: 3.0
+  goal_reach_distance: 5.0
+
+vehicles:
+  - id: 0
+    proposition_groups:
+      basic_safety:
+        enabled: true
+        description: &quot;Core safety propositions&quot;
+      dynamic_safety:
+        enabled: true
+        description: &quot;Dynamic collision avoidance&quot;
+      traffic_rules:
+        enabled: false
+        description: &quot;Traffic law compliance&quot;
+
+    propositions:
+      EGO_SPEED:
+        enabled: true
+        atomic_prop: 'speed_safe'
+        formula_type: 'always'
+        threshold: 30.0
+        data_sources:
+          vehicle_state:
+            topic: '/ego_vehicle/vehicle_state/dynamic'
+            field_path: 'vx'
+            transform_function: 'abs'
+            cache_duration: 0.1
+        evaluation_function: 'speed_limit_evaluator'
+
+      NEAR_GOAL:
+        enabled: true
+        atomic_prop: 'goal_reached'
+        formula_type: 'eventually'
+        threshold: 5.0
+        data_sources:
+          route:
+            topic: '/ego_vehicle/route'
+            field_path: ''
+            cache_duration: 5.0
+          vehicle_state:
+            topic: '/ego_vehicle/vehicle_state/dynamic'
+            field_path: ''
+            cache_duration: 0.1
+        evaluation_function: 'near_goal_evaluator'
+
+      SAFE_DISTANCE_X:
+        enabled: false
+        atomic_prop: 'longitudinal_safe'
+        formula_type: 'always'
+        data_sources:
+          ego_state:
+            topic: '/ego_vehicle/vehicle_state/dynamic'
+            field_path: ''
+            cache_duration: 0.1
+          traffic_participants:
+            topic: '/ego_vehicle/traffic_participants'
+            field_path: 'data'
+            cache_duration: 0.1
+        evaluation_function: 'longitudinal_safety_evaluator'
+</code></pre>
+<h3 id="data-source-configuration">Data Source Configuration</h3>
+<p>Each proposition can specify multiple data sources:</p>
+<ul>
+<li><strong>topic</strong>: ROS2 topic name</li>
+<li><strong>field_path</strong>: Dot-notation path to extract specific fields (empty for full message)</li>
+<li><strong>data_type</strong>: Optional data type specification</li>
+<li><strong>transform_function</strong>: Optional data transformation ('abs', 'speed_from_components', etc.)</li>
+<li><strong>cache_duration</strong>: How long to cache data in seconds</li>
+</ul>
+<h2 id="formula-types-reference">Formula Types Reference</h2>
+<table>
+<thead>
+<tr>
+<th>Formula Type</th>
+<th>CTL Expression</th>
+<th>Description</th>
+<th>Use Case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>always</code></td>
+<td><code>A(G(p))</code></td>
+<td>Property must always hold</td>
+<td>Safety invariants</td>
+</tr>
+<tr>
+<td><code>eventually</code></td>
+<td><code>A(F(p))</code></td>
+<td>Property must eventually hold</td>
+<td>Goal reaching</td>
+</tr>
+<tr>
+<td><code>never</code></td>
+<td><code>A(G(¬p))</code></td>
+<td>Property must never hold</td>
+<td>Collision avoidance</td>
+</tr>
+<tr>
+<td><code>always_not</code></td>
+<td><code>A(G(¬p))</code></td>
+<td>Same as never</td>
+<td>Safety violations</td>
+</tr>
+<tr>
+<td><code>next</code></td>
+<td><code>A(X(p))</code></td>
+<td>Property holds in next state</td>
+<td>State transitions</td>
+</tr>
+<tr>
+<td><code>until</code></td>
+<td><code>A(p U q)</code></td>
+<td>p holds until q becomes true</td>
+<td>Conditional behavior</td>
+</tr>
+<tr>
+<td><code>weak_until</code></td>
+<td><code>A(p W q)</code></td>
+<td>p holds until q or forever</td>
+<td>Optional conditions</td>
+</tr>
+</tbody>
+</table>
+<h2 id="usage-examples">Usage Examples</h2>
+<h3 id="monitor-with-debug-output">Monitor with Debug Output</h3>
+<pre><code class="language-bash">python3 adore_model_checker.py --mode online --config config.yaml --vehicle-id 0 --duration 30 --debug
+</code></pre>
+<h3 id="monitor-and-log">Monitor and Log</h3>
+<p>Monitor and log results to a json file:</p>
+<pre><code class="language-bash">python3 adore_model_checker.py --mode online --config config.yaml --vehicle-id 0 --output results.json
+</code></pre>
+<h3 id="debug-mode-with-data-recording">Debug Mode with Data Recording</h3>
+<pre><code class="language-bash">python3 adore_model_checker.py --mode online --config config.yaml --vehicle-id 0 --debug-mode --data-file recorded_data.yaml
+</code></pre>
+<h3 id="analyze-recorded-data">Analyze Recorded Data</h3>
+<pre><code class="language-bash">python3 adore_model_checker.py --mode offline --config config.yaml --data-file recorded_data.yaml
+</code></pre>
+<h2 id="command-line-options">Command Line Options</h2>
+<pre><code>usage: adore_model_checker.py [-h] --mode {online,offline} --config CONFIG
+                       [--bag-file BAG_FILE] [--vehicle-id VEHICLE_ID]
+                       [--duration DURATION] [--output OUTPUT]
+                       [--create-minimal-config CREATE_MINIMAL_CONFIG]
+                       [--debug]
+
+options:
+  -h, --help            show this help message and exit
+  --mode {online,offline}
+                        Monitoring mode
+  --config CONFIG       Configuration file path
+  --bag-file BAG_FILE   ROS bag file for offline mode
+  --vehicle-id VEHICLE_ID
+                        Vehicle ID to monitor (online mode)
+  --duration DURATION   Monitoring duration in seconds (online mode)
+  --output OUTPUT       Output file for results
+  --create-minimal-config CREATE_MINIMAL_CONFIG
+                        Create minimal sample config file
+  --debug               Enable debug logging
+</code></pre>
+<h2 id="output-format">Output Format</h2>
+<p>The tool provides detailed results with statistics:</p>
+<pre><code class="language-json">{
+  &quot;SUMMARY&quot;: {
+    &quot;total_propositions&quot;: 2,
+    &quot;analyzed&quot;: 2,
+    &quot;passed&quot;: 1,
+    &quot;failed&quot;: 1,
+    &quot;success_rate&quot;: 0.5,
+    &quot;overall_result&quot;: &quot;FAIL&quot;
+  },
+  &quot;EGO_SPEED&quot;: {
+    &quot;result&quot;: true,
+    &quot;status&quot;: &quot;PASS&quot;,
+    &quot;states_analyzed&quot;: 49,
+    &quot;kripke_states&quot;: 49,
+    &quot;statistics&quot;: {
+      &quot;max_velocity&quot;: 3.34,
+      &quot;average_velocity&quot;: 3.03,
+      &quot;speed_threshold&quot;: 13.89,
+      &quot;states_with_data&quot;: 34,
+      &quot;states_without_data&quot;: 15
+    }
+  },
+  &quot;NEAR_GOAL&quot;: {
+    &quot;result&quot;: false,
+    &quot;status&quot;: &quot;FAIL&quot;,
+    &quot;states_analyzed&quot;: 49,
+    &quot;kripke_states&quot;: 49,
+    &quot;statistics&quot;: {
+      &quot;goal_position&quot;: {&quot;x&quot;: 606447.62, &quot;y&quot;: 5797244.84},
+      &quot;final_vehicle_position&quot;: {&quot;x&quot;: 606481.58, &quot;y&quot;: 5797319.95},
+      &quot;min_distance_to_goal&quot;: 82.43,
+      &quot;final_distance_to_goal&quot;: 82.43,
+      &quot;goal_threshold&quot;: 5.0
+    }
+  }
+}
+</code></pre>
+<h2 id="extending-the-tool">Extending the Tool</h2>
+<h3 id="adding-custom-propositions">Adding Custom Propositions</h3>
+<ol>
+<li>Add new proposition types to <code>PropositionType</code> enum with appropriate group</li>
+<li>Implement evaluation logic in <code>PropositionEvaluators</code> class</li>
+<li>Add to default configuration generation</li>
+<li>Configure data sources in YAML</li>
+</ol>
+<h3 id="custom-evaluation-functions">Custom Evaluation Functions</h3>
+<p>Create new static methods in <code>PropositionEvaluators</code>:</p>
+<pre><code class="language-python">@staticmethod
+def custom_evaluator(data: Dict[str, Any], config: PropositionConfig, 
+                     safety_params: SafetyParameters) -&gt; Optional[bool]:
+    # Custom evaluation logic
+    return True  # or False based on your logic
+</code></pre>
+<h3 id="data-transformations">Data Transformations</h3>
+<p>Add new transform functions in <code>DataTransforms.apply_transform()</code>:</p>
+<pre><code class="language-python">elif transform_function == &quot;custom_transform&quot;:
+    return custom_transformation(data)
+</code></pre>
+<h2 id="architecture">Architecture</h2>
+<ul>
+<li><strong>ConfigLoader</strong>: Handles YAML configuration parsing and validation</li>
+<li><strong>OnlineMonitor</strong>: ROS2 data collection with topic subscriptions</li>
+<li><strong>ModelChecker</strong>: Core CTL model checking logic with Kripke structure creation</li>
+<li><strong>PropositionEvaluators</strong>: Safety proposition evaluation functions</li>
+<li><strong>VehicleMonitorAnalyzer</strong>: Orchestrates analysis and reporting</li>
+<li><strong>DataTransforms</strong>: Data extraction and transformation utilities</li>
+</ul>
+<h2 id="dependencies">Dependencies</h2>
+<ul>
+<li><strong>pyModelChecking</strong>: CTL model checking library</li>
+<li><strong>ROSMarshaller</strong>: ROS2 interface for topic subscription and data handling</li>
+<li><strong>pandas/numpy</strong>: Data processing and analysis</li>
+<li><strong>PyYAML</strong>: Configuration file parsing</li>
+<li><strong>threading/queue</strong>: Concurrent data collection</li>
+</ul>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<h3 id="common-issues">Common Issues</h3>
+<ol>
+<li><strong>ROS2 not found</strong>: Ensure ROS2 is installed and sourced</li>
+<li><strong>Topic not found</strong>: Check topic names with <code>ros2 topic list</code></li>
+<li><strong>No data for proposition</strong>: Check topic names and field paths in configuration</li>
+<li><strong>Missing evaluation function</strong>: Ensure evaluation_function matches available functions</li>
+<li><strong>CTL formula errors</strong>: Verify formula_type is supported</li>
+</ol>
+<h3 id="debug-tips">Debug Tips</h3>
+<ul>
+<li>Use <code>--debug</code> flag for detailed logging</li>
+<li>Check data source configuration with first few states</li>
+<li>Verify topic publication with <code>ros2 topic echo</code></li>
+<li>Use <code>--debug-mode</code> to record data for offline analysis</li>
+</ul>
+<h3 id="performance-considerations">Performance Considerations</h3>
+<ul>
+<li>Adjust <code>monitoring_frequency</code> based on system capabilities</li>
+<li>Set appropriate <code>cache_duration</code> for different data sources</li>
+<li>Limit <code>buffer_size</code> for memory-constrained systems</li>
+<li>Use field_path extraction to reduce data processing overhead</li>
+</ul>
+<h2 id="example-output">Example Output</h2>
+<p>The following section shows exaple terminal and report output from the model 
+checker.</p>
+<p>Running the following command while running the <code>simulation_scenario.py</code> scenario
+yields the following console output:
+Command:</p>
+<pre><code class="language-bash">python3 adore_model_checker.py --mode online --config adore_safety_checks.yaml --vehicle-id 0 --duration 5 --output adore_safety_checks.json
+</code></pre>
+<p>Console Output:</p>
+<pre><code class="language-text">Starting online monitoring for vehicle 0 for 5.0 seconds...
+ROS command: ros2 topic echo /ego_vehicle/vehicle_state/dynamic
+Subscription thread started for topic: /ego_vehicle/vehicle_state/dynamic
+Started process for /ego_vehicle/vehicle_state/dynamic (PID: 1464101)
+ROS command: ros2 topic echo /ego_vehicle/route
+Subscription thread started for topic: /ego_vehicle/route
+Started process for /ego_vehicle/route (PID: 1464142)
+============================================================
+DYNAMIC VEHICLE MONITORING RESULTS
+============================================================
+
+SUMMARY:
+  Total Propositions: 2
+  Analyzed: 2
+  Passed: 2
+  Failed: 0
+  Success Rate: 100.0%
+  Overall Result: PASS
+
+DETAILED RESULTS:
+------------------------------------------------------------
+  EGO_SPEED                      : PASS     (49 states, 49 Kripke states)
+                                     Max velocity: 0.00 m/s, Avg velocity: 0.00 m/s
+                                     Speed threshold: 13.89 m/s
+                                     States with data: 44, without data: 5
+                                     Valid evaluations: 49, failed evaluations: 0
+  NEAR_GOAL                      : PASS     (49 states, 38 Kripke states)
+                                     Goal position: (606447.62, 5797244.84)
+                                     Final vehicle position: (606446.25, 5797247.34)
+                                     Min distance to goal: 2.85m
+                                     Final distance to goal: 2.85m
+                                     Distance threshold: 5.00m
+                                     States with data: 0, without data: 11
+
+Results saved to: adore_safety_checks.json
+</code></pre>
+<p>Generated json Report:</p>
+<pre><code class="language-json">{
+  &quot;EGO_SPEED&quot;: {
+    &quot;result&quot;: true,
+    &quot;status&quot;: &quot;PASS&quot;,
+    &quot;states_analyzed&quot;: 49,
+    &quot;kripke_states&quot;: 49,
+    &quot;statistics&quot;: {
+      &quot;max_velocity&quot;: 0.002271388617618119,
+      &quot;average_velocity&quot;: 0.002271388617618121,
+      &quot;speed_threshold&quot;: 13.89,
+      &quot;states_with_data&quot;: 44,
+      &quot;states_without_data&quot;: 5,
+      &quot;valid_evaluations&quot;: 49,
+      &quot;failed_evaluations&quot;: 0,
+      &quot;true_evaluations&quot;: 49,
+      &quot;false_evaluations&quot;: 0,
+      &quot;speed_values&quot;: [
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119,
+        0.002271388617618119
+      ],
+      &quot;speed_sum&quot;: 0.09994109917519733
+    }
+  },
+  &quot;NEAR_GOAL&quot;: {
+    &quot;result&quot;: true,
+    &quot;status&quot;: &quot;PASS&quot;,
+    &quot;states_analyzed&quot;: 49,
+    &quot;kripke_states&quot;: 38,
+    &quot;statistics&quot;: {
+      &quot;goal_position&quot;: {
+        &quot;x&quot;: 606447.62,
+        &quot;y&quot;: 5797244.84
+      },
+      &quot;final_vehicle_position&quot;: {
+        &quot;x&quot;: 606446.2517311152,
+        &quot;y&quot;: 5797247.336126228
+      },
+      &quot;min_distance_to_goal&quot;: 2.8465427956342575,
+      &quot;final_distance_to_goal&quot;: 2.8465427956342575,
+      &quot;goal_threshold&quot;: 5.0,
+      &quot;states_with_data&quot;: 0,
+      &quot;states_without_data&quot;: 11,
+      &quot;valid_evaluations&quot;: 38,
+      &quot;failed_evaluations&quot;: 0,
+      &quot;true_evaluations&quot;: 38,
+      &quot;false_evaluations&quot;: 0
+    }
+  },
+  &quot;SUMMARY&quot;: {
+    &quot;total_propositions&quot;: 2,
+    &quot;analyzed&quot;: 2,
+    &quot;passed&quot;: 2,
+    &quot;failed&quot;: 0,
+    &quot;success_rate&quot;: 1.0,
+    &quot;overall_result&quot;: &quot;PASS&quot;
+  }
+}
+</code></pre>
+<h2 id="proposition-descriptions">Proposition Descriptions</h2>
+<h3 id="acceleration_compliance">ACCELERATION_COMPLIANCE</h3>
+<p>Monitors the difference between commanded and measured acceleration during acceleration events:
+- <strong>Threshold</strong>: Configurable maximum error (default: 1.5 m/s²)
+- <strong>Evaluation</strong>: Only active during positive commanded acceleration (&gt; 0.1 m/s²)
+- <strong>Statistics</strong>: Max/min/avg errors, compliance rates, violation counts</p>
+<h3 id="deceleration_compliance">DECELERATION_COMPLIANCE</h3>
+<p>Monitors the difference between commanded and measured acceleration during deceleration events:
+- <strong>Threshold</strong>: Configurable maximum error (default: 2.0 m/s²)
+- <strong>Evaluation</strong>: Only active during negative commanded acceleration (&lt; -0.1 m/s²)
+- <strong>Statistics</strong>: Max/min/avg errors, compliance rates, violation counts</p>
+<p>Both propositions provide detailed statistics including:
+- Maximum and average tracking errors
+- Measured vs commanded acceleration values
+- Compliance violation counts and rates
+- Separate event tracking for acceleration vs deceleration</p>
+<h2 id="building-an-apt-deb-package">Building an APT <code>.deb</code> package</h2>
+<p>This project contains a <code>Makefile</code> and <code>Dockerfile</code>
+that can be used to to generate an APT <code>.deb</code> package. To generate a package
+invoke:</p>
+<pre><code>make build
+</code></pre>
+<blockquote>
+<p>ℹ️ <strong>Info:</strong> Requires <code>Docker</code> and <code>GNU Make</code> to be installed. </p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>
